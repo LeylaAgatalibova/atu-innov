@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATU İnnovasiya Mərkəzi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav id="navbar">
+  <div class="nav-brand" onclick="showPage('home')">
+    <div class="nav-logo"><img src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/395953634_122104283462085761_8529736861781054849_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=IBrgENuc-hoQ7kNvwEISTsF&_nc_oc=AdpY5jb-W4Bcw70chXkVqN4Xw3qTab8dcQj3E1vRo4rED3h6m9W9UBB6eZjohdcxRVE&_nc_zt=23&_nc_ht=scontent.fgyd9-1.fna&_nc_gid=1tc_MeJKBReBRTEOpYY-yg&_nc_ss=7a3a8&oh=00_Af1Of9e3bI52nmNMD3uT-gWFuAP1U5BoBEEqwW48Ztg2Yg&oe=69EAA999" alt=""></div>
+    <div class="nav-wordmark">ATU İnnovasiya<span>Azərbaycan Texnologiya Universiteti</span></div>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <span class="nav-link active" data-page="home" onclick="showPage('home',this)">Ana Səhifə</span>
+    <span class="nav-link" data-page="startups" onclick="showPage('startups',this)">Startaplar</span>
+    <span class="nav-link" data-page="mentors" onclick="showPage('mentors',this)">Mentorlar</span>
+    <span class="nav-link" data-page="programs" onclick="showPage('programs',this)">Proqramlar</span>
+    <span class="nav-link" data-page="events" onclick="showPage('events',this)">Tədbirlər</span>
+    <span class="nav-link" data-page="news" onclick="showPage('news',this)">Xəbərlər</span>
+    <span class="nav-link" data-page="partners" onclick="showPage('partners',this)">Tərəfdaşlar</span>
+    <span class="nav-link" data-page="contact" onclick="showPage('contact',this)">Əlaqə</span>
+  </div>
+  <div class="nav-right">
+    <button class="lang-btn active" onclick="setLang('az',this)">AZ</button>
+    <button class="lang-btn" onclick="setLang('en',this)">EN</button>
+    <button class="lang-btn" onclick="setLang('ru',this)">RU</button>
+    <button class="btn-nav-primary" onclick="showPage('apply')">Müraciət et</button>
+    <button class="btn-nav-primary" style="background:rgba(15,23,42,0.08);color:#0f172a" onclick="showPage('admin')">Admin</button>
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════
+     HOME PAGE
+═══════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-orbs">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+    </div>
+    <div class="hero-content">
+      <!-- <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span> Azərbaycan Texnologiya Universiteti — 2019</div> -->
+      <h1>ATU İnnovasiya Mərkəzi </h1>
+      <p class="hero-desc"> — startapdan mentora, inkubasiyadan sertifikatlı proqramlara qədər tam rəqəmsal ekosistem.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" onclick="showPage('apply')">Müraciət et →</button>
+        <button class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.2)" onclick="showPage('programs')">Proqramlara bax</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="about-split">
+        <div class="about-text reveal">
+          <div class="section-eyebrow">Haqqımızda</div>
+          <h2 class="section-title">İnnovasiya Mərkəzi nədir?</h2>
+          <p class="section-sub" style="max-width:100%">Universitetin məqsədlərinə və strateji inkişaf tələblərinə uyğun olaraq, innovasiya strategiyasının planlaşdırılmasını təmin edir. İnnovativ mühitin təşkili: universitet daxilində innovativ düşüncəyə, problem həllinə və təşəbbüskarlığa təşviq edən tədbirlər, seminarlar və təlimlər təşkil edərək innovasiya mədəniyyətinin formalaşmasına yardım etmək.</p>
+          <div class="about-features" style="margin-top:1.75rem">
+            <div class="about-feature">
+              <div class="af-icon">🧪</div>
+              <div><div class="af-title">İnkubasiya Proqramı</div><div class="af-desc">Startaplar üçün 6 aylıq sürətləndirilmiş inkubasiya dəstəyi</div></div>
+            </div>
+            <div class="about-feature">
+              <div class="af-icon">🎓</div>
+              <div><div class="af-title">Ödənişsiz Təlimlər</div><div class="af-desc">6 istiqamət üzrə peşəkar kurrikulum, sertifikat ilə</div></div>
+            </div>
+            <div class="about-feature">
+              <div class="af-icon">🤝</div>
+              <div><div class="af-title">Mentor Şəbəkəsi</div><div class="af-desc">45+ sənaye liderindən birbaşa dəstək və yönlendirme</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal reveal-2">
+          <div class="av-stat">
+            <div class="av-icon">💻</div>
+            <div class="av-stat-num"><b>6</b></div>
+            <div class="av-stat-label">Texniki proqram</div>
+          </div>
+          <div class="av-stat">
+            <div class="av-icon">🌱</div>
+            <div class="av-stat-num"><b>8</b></div>
+            <div class="av-stat-label">Aktiv klub</div>
+          </div>
+          <div class="av-stat">
+            <div class="av-icon">🏆</div>
+            <div class="av-stat-num"><b>34</b></div>
+            <div class="av-stat-label">Beynəlxalq mükafat</div>
+          </div>
+          <div class="av-stat">
+            <div class="av-icon">🌍</div>
+            <div class="av-stat-num"><b>18</b></div>
+            <div class="av-stat-label">Beynəlxalq tərəfdaş</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FEATURED STARTUPS -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div class="section-eyebrow">Startap Ekosistemi</div>
+          <h2 class="section-title">Seçilmiş layihələr</h2>
+        </div>
+        <button class="btn btn-outline btn-sm" onclick="showPage('startups')">Hamısına bax →</button>
+      </div>
+      <div class="grid-3" id="home-startups"></div>
+    </div>
+  </section>
+
+  <!-- FEATURED EVENTS -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div class="section-eyebrow">Tədbirlər</div>
+          <h2 class="section-title">Yaxınlaşan tədbirlər</h2>
+        </div>
+        <button class="btn btn-outline btn-sm" onclick="showPage('events')">Hamısına bax →</button>
+      </div>
+      <div class="grid-3" id="home-events"></div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="cta-banner">
+        <div class="cta-content">
+          <h2>Ödənişsiz Təlim Proqramları</h2>
+          <p>Qrafik dizayndan süni intellektə — 6 istiqamət, tamamilə pulsuz, sertifikatlı.</p>
+        </div>
+        <div class="cta-actions">
+          <button class="btn" style="background:#fff;color:#0f172a;font-weight:700" onclick="showPage('programs')">Proqramlara bax</button>
+          <button class="btn btn-ghost" style="border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.7)" onclick="showPage('apply')">Müraciət et</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST NEWS -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div class="section-eyebrow">Xəbərlər</div>
+          <h2 class="section-title">Son xəbərlər</h2>
+        </div>
+        <button class="btn btn-outline btn-sm" onclick="showPage('news')">Hamısına bax →</button>
+      </div>
+      <div class="grid-3" id="home-news"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">ATU İnnovasiya Mərkəzi</div>
+          <div class="footer-brand-desc">Azərbaycan Texnologiya Universitetinin nəzdindəki innovasiya və sahibkarlıq ekosistemi. Texnologiyanı insanlar üçün işlədirik.</div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Platforma</div>
+          <ul>
+            <li><a onclick="showPage('startups')">Startaplar</a></li>
+            <li><a onclick="showPage('mentors')">Mentorlar</a></li>
+            <li><a onclick="showPage('programs')">Proqramlar</a></li>
+            <li><a onclick="showPage('events')">Tədbirlər</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Məlumat</div>
+          <ul>
+            <li><a onclick="showPage('news')">Xəbərlər</a></li>
+            <li><a onclick="showPage('partners')">Tərəfdaşlar</a></li>
+            <li><a onclick="showPage('apply')">Müraciət</a></li>
+            <li><a onclick="showPage('contact')">Əlaqə</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Əlaqə</div>
+          <ul>
+            <li><a>innovasiya@atu.edu.az</a></li>
+            <li><a>+994 12 565 33 00</a></li>
+            <li><a>Gəncə ş. AZ2011 Şah İsmayıl Xətai prospekti 103</a></li>
+            <li><a>B.e. — Cümə, 09:00–18:00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ATU İnnovasiya Mərkəzi. Bütün hüquqlar qorunur.</span>
+        <!-- <span class="footer-bottom-right">Made with care L</span> -->
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ═══════════════════════════════════
+     STARTUPS PAGE
+═══════════════════════════════════ -->
+<div id="page-startups" class="page page-body">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-eyebrow">Ekosistem</div>
+        <h2 class="section-title">Startap Ekosistemi</h2>
+        <p class="section-sub">Mərkəzimizdəki bütün innovativ layihələr</p>
+      </div>
+      <div class="toolbar">
+        <input type="text" class="search-input" id="startup-search" placeholder="Startap axtar..." oninput="filterStartups()">
+        <div class="filters">
+          <button class="filter-btn active" onclick="filterByStage('all',this)">Hamısı</button>
+          <button class="filter-btn" onclick="filterByStage('idea',this)">İdeya</button>
+          <button class="filter-btn" onclick="filterByStage('mvp',this)">MVP</button>
+          <button class="filter-btn" onclick="filterByStage('ready',this)">Hazır</button>
+        </div>
+      </div>
+      <div class="grid-auto" id="startups-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     MENTORS PAGE
+═══════════════════════════════════ -->
+<div id="page-mentors" class="page page-body">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-eyebrow">Mentor Şəbəkəsi</div>
+        <h2 class="section-title">Sənaye liderləri</h2>
+        <p class="section-sub">Azərbaycanın aparıcı texnoloq və sahibkarları ilə birbaşa əlaqə</p>
+      </div>
+      <div class="toolbar">
+        <input type="text" class="search-input" id="mentor-search" placeholder="Mentor, ixtisas, şirkət axtar..." oninput="filterMentors()">
+      </div>
+      <div class="grid-auto-sm" id="mentors-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     PROGRAMS PAGE
+═══════════════════════════════════ -->
+<div id="page-programs" class="page page-body">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-eyebrow">Ödənişsiz Proqramlar</div>
+        <h2 class="section-title">Peşəkar Təlim Proqramları</h2>
+        <p class="section-sub">Sertifikatlı, mentorlu, real layihə əsaslı — tamamilə pulsuz.</p>
+      </div>
+
+      <!-- Requirements strip -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-bottom:3.5rem">
+        <div class="card" style="border-left:3px solid #2563eb;padding:1.5rem">
+          <div style="font-size:1.5rem;margin-bottom:.75rem">📋</div>
+          <div style="font-weight:700;font-size:.9rem;color:#0f172a;margin-bottom:.5rem">İştirak tələbləri</div>
+          <ul style="color:#475569;font-size:.82rem;list-style:disc;padding-left:1.1rem;line-height:1.9;font-weight:300">
+            <li>ATU tələbəsi olmaq</li>
+            <li>Minimum 1-ci kurs</li>
+            <li>Orta bal ≥ 60</li>
+            <li>Müsahibədən keçmək</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left:3px solid #059669;padding:1.5rem">
+          <div style="font-size:1.5rem;margin-bottom:.75rem">👥</div>
+          <div style="font-weight:700;font-size:.9rem;color:#0f172a;margin-bottom:.5rem">Kimlər iştirak edə bilər</div>
+          <ul style="color:#475569;font-size:.82rem;list-style:disc;padding-left:1.1rem;line-height:1.9;font-weight:300">
+            <li>Bütün ixtisas tələbələri</li>
+            <li>Magistr tələbələri</li>
+            <li>ATU məzunları (1 il)</li>
+            <li>Tərəfdaş universitetlər</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left:3px solid #f59e0b;padding:1.5rem">
+          <div style="font-size:1.5rem;margin-bottom:.75rem">🎯</div>
+          <div style="font-weight:700;font-size:.9rem;color:#0f172a;margin-bottom:.5rem">Əsas imkanlar</div>
+          <ul style="color:#475569;font-size:.82rem;list-style:disc;padding-left:1.1rem;line-height:1.9;font-weight:300">
+            <li>Rəsmi sertifikat</li>
+            <li>Mentor dəstəyi</li>
+            <li>Real layihə təcrübəsi</li>
+            <li>İş imkanları şəbəkəsi</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TABS -->
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('programs-tab','tab-programs',this)">📚 Proqramlar</button>
+        <button class="tab-btn" onclick="switchTab('programs-tab','tab-clubs',this)">🌱 Klublar</button>
+      </div>
+      <div id="programs-tab">
+        <div class="tab-panel active" id="tab-programs">
+          <div class="grid-3" id="programs-grid"></div>
+        </div>
+        <div class="tab-panel" id="tab-clubs">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1rem" id="clubs-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     EVENTS PAGE
+═══════════════════════════════════ -->
+<div id="page-events" class="page page-body">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-eyebrow">Tədbirlər Təqvimi</div>
+        <h2 class="section-title">Seminar, Workshop, Hackathon</h2>
+        <p class="section-sub">Canlı tədbirlərdə iştirak edərək biliyinizi genişləndirib şəbəkənizi qurun.</p>
+      </div>
+      <div class="filters" style="margin-bottom:2rem">
+        <button class="filter-btn active" onclick="filterEvents('all',this)">Hamısı</button>
+        <button class="filter-btn" onclick="filterEvents('seminar',this)">Seminar</button>
+        <button class="filter-btn" onclick="filterEvents('workshop',this)">Workshop</button>
+        <button class="filter-btn" onclick="filterEvents('hackathon',this)">Hackathon</button>
+      </div>
+      <div class="grid-auto" id="events-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- EVENT DETAIL -->
+<div id="page-event-detail" class="page page-body">
+  <section class="section">
+    <div class="section-inner">
+      <div class="detail-wrap" id="event-detail-content"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     NEWS PAGE
+═══════════════════════════════════ -->
+<div id="page-news" class="page page-body">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-eyebrow">Xəbərlər</div>
+        <h2 class="section-title">Xəbərlər & Məqalələr</h2>
+        <p class="section-sub">İnnovasiya dünyasından ən son yeniliklər</p>
+      </div>
+      <div class="grid-3" id="news-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- NEWS DETAIL -->
+<div id="page-news-detail" class="page page-body">
+  <section class="section">
+    <div class="section-inner">
+      <div class="detail-wrap" id="news-detail-content"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     PARTNERS PAGE
+═══════════════════════════════════ -->
+<div id="page-partners" class="page page-body">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-eyebrow">Tərəfdaşlar</div>
+        <h2 class="section-title">Ekosistemi birlikdə qururuq</h2>
+        <p class="section-sub">Azərbaycanın aparıcı şirkətləri, beynəlxalq qurumlar və universitetlər</p>
+      </div>
+      <div class="grid-auto-sm" id="partners-grid"></div>
+      <div style="margin-top:3.5rem">
+        <div class="cta-banner">
+          <div class="cta-content">
+            <h2>Tərəfdaş olun</h2>
+            <p>Şirkətinizin adını ATU İnnovasiya Mərkəzinin tərəfdaşları arasında görmək istəyirsiniz?</p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn" style="background:#fff;color:#0f172a;font-weight:700" onclick="showPage('contact')">Əlaqə saxlayın →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     APPLY PAGE
+═══════════════════════════════════ -->
+<div id="page-apply" class="page page-body">
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-eyebrow">Müraciət</div>
+        <h2 class="section-title">Bizimlə birlikdə inkişaf edin</h2>
+        <p class="section-sub">Könüllü kimi qatılın və ya startapınızı inkubasiya proqramına əlavə edin</p>
+      </div>
+      <div class="form-wrapper">
+        <div class="form-tabs">
+          <button class="form-tab active" onclick="switchApplyTab('volunteer',this)">🙋 Könüllü Qeydiyyat</button>
+          <button class="form-tab" onclick="switchApplyTab('startup',this)">🚀 Startap Müraciəti</button>
+        </div>
+
+        <!-- VOLUNTEER FORM -->
+        <div id="apply-volunteer" class="form-section active">
+          <div class="form-card">
+            <div class="form-title">Könüllü Qeydiyyat</div>
+            <div class="form-subtitle">İnnovasiya Mərkəzinə könüllü kimi qatılmaq üçün aşağıdakı formu doldurun.</div>
+            <div class="form-row">
+              <div class="form-group"><label>Ad *</label><input type="text" id="v-name" placeholder="Adınız"></div>
+              <div class="form-group"><label>Soyad *</label><input type="text" id="v-surname" placeholder="Soyadınız"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Email *</label><input type="email" id="v-email" placeholder="email@atu.edu.az"></div>
+              <div class="form-group"><label>Telefon *</label><input type="tel" id="v-phone" placeholder="+994 50 XXX XX XX"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>İxtisas *</label>
+                <select id="v-major">
+                  <option value="">Seçin...</option>
+                  <option>Kompüter Mühəndisliyi</option>
+                  <option>İnformasiya Texnologiyaları</option>
+                  <option>Kibertəhlükəsizlik</option>
+                  <option>Proqram Mühəndisliyi</option>
+                  <option>Elektronika Mühəndisliyi</option>
+                  <option>İqtisadiyyat</option>
+                  <option>Menecment</option>
+                  <option>Digər</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Kurs *</label>
+                <select id="v-year">
+                  <option value="">Seçin...</option>
+                  <option>1-ci kurs</option>
+                  <option>2-ci kurs</option>
+                  <option>3-cü kurs</option>
+                  <option>4-cü kurs</option>
+                  <option>Magistr</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Maraq sahəsi *</label>
+              <select id="v-interest">
+                <option value="">Seçin...</option>
+                <option>Frontend Development</option>
+                <option>Backend Development</option>
+                <option>Qrafik Dizayn</option>
+                <option>Süni İntellekt</option>
+                <option>Kibertəhlükəsizlik</option>
+                <option>Robototexnika</option>
+                <option>Marketinq</option>
+                <option>Layihə idarəetməsi</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Təcrübəniz</label>
+              <textarea id="v-experience" placeholder="Əvvəlki layihələr, sertifikatlar, fəaliyyətlər..."></textarea>
+            </div>
+            <div class="form-group">
+              <label>CV yükləyin</label>
+              <input type="file" accept=".pdf,.doc,.docx" style="padding:8px">
+            </div>
+            <div class="success-msg" id="volunteer-success">
+              <h3>✓ Müraciətiniz qəbul edildi!</h3>
+              <p>Tezliklə sizinlə əlaqə saxlanılacaq. Email ünvanınızı yoxlayın.</p>
+            </div>
+            <button class="btn btn-secondary" onclick="submitVolunteer()">Qeydiyyatdan keç →</button>
+          </div>
+        </div>
+
+        <!-- STARTUP MULTI-STEP FORM -->
+        <div id="apply-startup" class="form-section">
+          <div class="form-card">
+            <div class="step-progress" id="step-progress">
+              <div class="step-dot done" id="dot-1"></div>
+              <div class="step-dot" id="dot-2"></div>
+              <div class="step-dot" id="dot-3"></div>
+              <div class="step-dot" id="dot-4"></div>
+              <div class="step-dot" id="dot-5"></div>
+              <div class="step-dot" id="dot-6"></div>
+            </div>
+
+            <div class="step-panel active" id="step-1">
+              <div class="step-header"><div class="step-num">1</div><div class="step-info"><h3>Layihə haqqında</h3><p>Startapınızın əsas məlumatları — Addım 1/6</p></div></div>
+              <div class="form-group"><label>Layihənin adı *</label><input type="text" id="s-name" placeholder="Startapınızın adı"></div>
+              <div class="form-group"><label>Biznes İdeyası *</label><textarea id="s-idea" placeholder="Probleminiz nədir və hansı həlli təklif edirsiniz?" style="min-height:120px"></textarea></div>
+              <div class="form-group">
+                <label>Hazırkı mərhələ</label>
+                <div class="radio-group">
+                  <label class="radio-card"><input type="radio" name="stage" value="idea"> İdeya mərhələsi</label>
+                  <label class="radio-card"><input type="radio" name="stage" value="mvp"> Prototip (MVP)</label>
+                  <label class="radio-card"><input type="radio" name="stage" value="customers"> İlk müştərilər var</label>
+                  <label class="radio-card"><input type="radio" name="stage" value="sales"> Satış / maliyyələşmə</label>
+                </div>
+              </div>
+              <div class="step-nav"><button class="btn btn-secondary" onclick="stepNext(2)">İrəli →</button></div>
+            </div>
+
+            <div class="step-panel" id="step-2">
+              <div class="step-header"><div class="step-num">2</div><div class="step-info"><h3>Komanda</h3><p>Komandanızın strukturu — Addım 2/6</p></div></div>
+              <div class="form-group"><label>Komanda üzvlərinin sayı *</label><input type="number" id="s-team-count" placeholder="Məsələn: 3" min="1"></div>
+              <div class="form-group"><label>Üzvlər və rollar *</label><textarea id="s-team-members" placeholder="1. Əli Məmmədov – CEO&#10;2. Leyla Əhmədova – CTO" style="min-height:120px"></textarea></div>
+              <div class="form-group"><label>Komandanın əvvəlki təcrübəsi</label><textarea id="s-team-exp" placeholder="Əvvəlki layihələr, mükafatlar, yarışlar..."></textarea></div>
+              <div class="step-nav">
+                <button class="btn btn-outline" onclick="stepNext(1)">← Geri</button>
+                <button class="btn btn-secondary" onclick="stepNext(3)">İrəli →</button>
+              </div>
+            </div>
+
+            <div class="step-panel" id="step-3">
+              <div class="step-header"><div class="step-num">3</div><div class="step-info"><h3>Bazar & Rəqabət</h3><p>Bazar analizi — Addım 3/6</p></div></div>
+              <div class="form-group"><label>Hədəf auditoriya</label><textarea id="s-audience" placeholder="Kimə xidmət göstərirsiniz?"></textarea></div>
+              <div class="form-group"><label>Əsas rəqiblər</label><textarea id="s-competitors" placeholder="Birbaşa və dolayı rəqibləri siyahılayın..."></textarea></div>
+              <div class="form-group"><label>Sizin üstünlükləriniz</label><textarea id="s-advantages" placeholder="Sizi rəqiblərdən fərqləndirən nədir?"></textarea></div>
+              <div class="step-nav">
+                <button class="btn btn-outline" onclick="stepNext(2)">← Geri</button>
+                <button class="btn btn-secondary" onclick="stepNext(4)">İrəli →</button>
+              </div>
+            </div>
+
+            <div class="step-panel" id="step-4">
+              <div class="step-header"><div class="step-num">4</div><div class="step-info"><h3>Resurs Ehtiyacları</h3><p>Hansı dəstəyə ehtiyacınız var — Addım 4/6</p></div></div>
+              <div class="form-group"><label>Komandanın güclü tərəfləri</label><textarea id="s-strengths" placeholder="Texniki biliklər, bacarıqlar..."></textarea></div>
+              <div class="form-group">
+                <label>Ehtiyac duyduğunuz dəstək növü</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-item"><input type="checkbox" value="mentor"> Mentorluq</label>
+                  <label class="checkbox-item"><input type="checkbox" value="finance"> Maliyyə dəstəyi</label>
+                  <label class="checkbox-item"><input type="checkbox" value="tech"> Texniki dəstək</label>
+                  <label class="checkbox-item"><input type="checkbox" value="marketing"> Marketing</label>
+                  <label class="checkbox-item"><input type="checkbox" value="network"> Şəbəkə / Əlaqələr</label>
+                  <label class="checkbox-item"><input type="checkbox" value="legal"> Hüquqi dəstək</label>
+                </div>
+              </div>
+              <div class="step-nav">
+                <button class="btn btn-outline" onclick="stepNext(3)">← Geri</button>
+                <button class="btn btn-secondary" onclick="stepNext(5)">İrəli →</button>
+              </div>
+            </div>
+
+            <div class="step-panel" id="step-5">
+              <div class="step-header"><div class="step-num">5</div><div class="step-info"><h3>Gözləntilər</h3><p>İnkubasiya dövründəki hədəflər — Addım 5/6</p></div></div>
+              <div class="form-group"><label>Gözləntilər</label><textarea id="s-expectations" placeholder="İnkubasiya proqramından nə gözləyirsiniz?" style="min-height:120px"></textarea></div>
+              <div class="form-group"><label>Növbəti 6 ayda hədəflər</label><textarea id="s-goals" placeholder="MVP, ilk 1000 istifadəçi, $10k revenue..."></textarea></div>
+              <div class="step-nav">
+                <button class="btn btn-outline" onclick="stepNext(4)">← Geri</button>
+                <button class="btn btn-secondary" onclick="stepNext(6)">İrəli →</button>
+              </div>
+            </div>
+
+            <div class="step-panel" id="step-6">
+              <div class="step-header"><div class="step-num">6</div><div class="step-info"><h3>Göndərmə</h3><p>Məlumatları yoxlayıb göndərin — Addım 6/6</p></div></div>
+              <div style="background:#dbeafe;border:1px solid rgba(37,99,235,0.2);border-radius:8px;padding:1.25rem;margin-bottom:1.5rem;font-size:.84rem;color:#0f172a">
+                📋 Göndərmədən əvvəl bütün məlumatlarınızın dəqiq olduğunu yoxlayın.
+              </div>
+              <div id="startup-review" style="font-size:.84rem;color:#475569;line-height:1.85"></div>
+              <div class="success-msg" id="startup-success">
+                <h3>🚀 Müraciətiniz göndərildi!</h3>
+                <p>Komandamız 5 iş günü ərzində sizinlə əlaqə saxlayacaq.</p>
+              </div>
+              <div class="step-nav">
+                <button class="btn btn-outline" onclick="stepNext(5)">← Geri</button>
+                <button class="btn btn-secondary" onclick="submitStartup()">🚀 Göndər</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     CONTACT PAGE
+═══════════════════════════════════ -->
+<div id="page-contact" class="page page-body">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-eyebrow">Əlaqə</div>
+        <h2 class="section-title">Bizimlə əlaqə saxlayın</h2>
+        <p class="section-sub">Sualınız, təklifiniz və ya əməkdaşlıq üçün yazın — 24 saat ərzində cavab veririk.</p>
+      </div>
+      <div class="contact-split">
+        <div class="contact-info-panel">
+          <div class="contact-info-title">Əlaqə Məlumatları</div>
+          <div class="contact-item">
+            <div class="ci-icon">📧</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-value">innovasiya@atu.edu.az<br>info@atu-innovation.az</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-label">Telefon</div>
+              <div class="ci-value">+994 12 565 33 00<br>+994 50 444 22 11</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Ünvan</div>
+              <div class="ci-value">Gəncə ş. AZ2011 Şah İsmayıl Xətai prospekti 103</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">🕐</div>
+            <div>
+              <div class="ci-label">İş saatları</div>
+              <div class="ci-value">Bazar ertəsi — Cümə<br>09:00 – 18:00</div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-btn">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
+            <a href="https://t.me" target="_blank" class="social-btn">Telegram</a>
+          </div>
+        </div>
+        <div class="form-card">
+          <div class="form-title">Mesaj göndərin</div>
+          <div class="form-subtitle">Bütün sahələri doldurun, tezliklə cavab veririk.</div>
+          <div class="form-row">
+            <div class="form-group"><label>Ad *</label><input type="text" id="c-name" placeholder="Adınız"></div>
+            <div class="form-group"><label>Email *</label><input type="email" id="c-email" placeholder="email@example.com"></div>
+          </div>
+          <div class="form-group"><label>Mövzu *</label><input type="text" id="c-subject" placeholder="Mesajınızın mövzusu"></div>
+          <div class="form-group"><label>Mesaj *</label><textarea id="c-message" placeholder="Mesajınızı buraya yazın..." style="min-height:150px"></textarea></div>
+          <div class="success-msg" id="contact-success">
+            <h3>✓ Mesajınız göndərildi!</h3>
+            <p>Tezliklə sizinlə əlaqə saxlayacağıq.</p>
+          </div>
+          <button class="btn btn-secondary" onclick="submitContact()">Göndər →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     ADMIN PAGE
+═══════════════════════════════════ -->
+<div id="page-admin" class="page">
+  <div class="admin-layout">
+    <div class="admin-sidebar" style="padding-top:80px">
+      <div class="admin-logo">ATU Admin<span>İnnovasiya Mərkəzi</span></div>
+      <div class="admin-nav-item active" onclick="showAdminPanel('dashboard',this)">📊 Panel</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('add-event',this)">📅 Yeni Tədbir</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('add-program',this)">📚 Yeni Proqram</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('add-startup',this)">💡 Yeni Startap</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('volunteers',this)">🙋 Könüllü Müraciətlər</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('startup-apps',this)">🚀 Startap Müraciətlər</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('volunteer-hub',this)">➕ Könüllü Əlavə Et</div>
+      <div style="margin-top:2rem">
+        <div class="admin-nav-item" onclick="showPage('home')" style="color:#f87171">← Sayta qayıt</div>
+      </div>
+    </div>
+    <div class="admin-content" style="padding-top:80px">
+
+      <div class="admin-panel active" id="admin-dashboard">
+        <div class="admin-title">İdarəetmə Paneli</div>
+        <div class="admin-sub">ATU İnnovasiya Mərkəzi — Admin Paneli</div>
+        <div class="admin-stats-grid" id="admin-stats"></div>
+        <div style="font-family:'Playfair Display', Georgia, serif;font-weight:700;font-size:1.1rem;color:#0f172a;margin-bottom:1rem">Son müraciətlər</div>
+        <div id="admin-recent"></div>
+      </div>
+
+      <div class="admin-panel" id="admin-add-event">
+        <div class="admin-title">Yeni Tədbir Əlavə Et</div>
+        <div class="admin-sub">Forma doldurun — avtomatik tədbirlər siyahısına əlavə olunacaq</div>
+        <div class="admin-add-form">
+          <div class="form-row">
+            <div class="form-group"><label>Başlıq *</label><input type="text" id="ae-title" placeholder="Tədbirin adı"></div>
+            <div class="form-group"><label>Kateqoriya</label>
+              <select id="ae-cat"><option value="seminar">Seminar</option><option value="workshop">Workshop</option><option value="hackathon">Hackathon</option></select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Tarix</label><input type="date" id="ae-date"></div>
+            <div class="form-group"><label>Emoji</label><input type="text" id="ae-emoji" value="🎯"></div>
+          </div>
+          <div class="form-group"><label>Qısa təsvir *</label><textarea id="ae-desc" placeholder="Qısa açıqlama..."></textarea></div>
+          <div class="form-group"><label>Ətraflı mətn</label><textarea id="ae-detail" placeholder="Ətraflı məlumat..." style="min-height:120px"></textarea></div>
+          <button class="btn btn-secondary btn-sm" onclick="adminAddEvent()">Əlavə et</button>
+          <div class="success-msg" id="ae-success" style="margin-top:1rem"><h3>✓ Əlavə edildi!</h3></div>
+        </div>
+        <div style="font-family:'Playfair Display', Georgia, serif;font-weight:700;font-size:1.05rem;color:#0f172a;margin-bottom:1rem">Mövcud tədbirlər</div>
+        <table class="admin-table"><thead><tr><th>Başlıq</th><th>Kateqoriya</th><th>Tarix</th><th>Əməliyyat</th></tr></thead><tbody id="admin-events-list"></tbody></table>
+      </div>
+
+      <div class="admin-panel" id="admin-add-program">
+        <div class="admin-title">Yeni Proqram Əlavə Et</div>
+        <div class="admin-sub">Yeni təlim proqramı yaradın</div>
+        <div class="admin-add-form">
+          <div class="form-row">
+            <div class="form-group"><label>Proqram adı *</label><input type="text" id="ap-title" placeholder="Proqramın adı"></div>
+            <div class="form-group"><label>Emoji</label><input type="text" id="ap-emoji" value="💻"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Müddət</label><input type="text" id="ap-duration" placeholder="3 ay"></div>
+            <div class="form-group"><label>Səviyyə</label>
+              <select id="ap-level"><option>Başlanğıc</option><option>Orta</option><option>İrəliləmiş</option></select>
+            </div>
+          </div>
+          <div class="form-group"><label>Təsvir *</label><textarea id="ap-desc" placeholder="Proqram haqqında..."></textarea></div>
+          <button class="btn btn-secondary btn-sm" onclick="adminAddProgram()">Əlavə et</button>
+          <div class="success-msg" id="ap-success" style="margin-top:1rem"><h3>✓ Əlavə edildi!</h3></div>
+        </div>
+        <div style="font-family:'Playfair Display', Georgia, serif;font-weight:700;font-size:1.05rem;color:#0f172a;margin-bottom:1rem">Mövcud proqramlar</div>
+        <table class="admin-table"><thead><tr><th>Ad</th><th>Müddət</th><th>Səviyyə</th><th>Status</th></tr></thead><tbody id="admin-programs-list"></tbody></table>
+      </div>
+
+      <div class="admin-panel" id="admin-add-startup">
+        <div class="admin-title">Yeni Startap Əlavə Et</div>
+        <div class="admin-sub">Startap bazasına yeni layihə əlavə edin</div>
+        <div class="admin-add-form">
+          <div class="form-row">
+            <div class="form-group"><label>Startap adı *</label><input type="text" id="as-name" placeholder="Startapın adı"></div>
+            <div class="form-group"><label>Mərhələ</label>
+              <select id="as-stage"><option value="idea">İdeya</option><option value="mvp">MVP</option><option value="ready">Hazır</option></select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Komanda</label><input type="text" id="as-team" placeholder="4 nəfər"></div>
+            <div class="form-group"><label>Emoji</label><input type="text" id="as-emoji" value="💡"></div>
+          </div>
+          <div class="form-group"><label>Kateqoriya</label><input type="text" id="as-category" placeholder="EdTech, FinTech..."></div>
+          <div class="form-group"><label>Təsvir *</label><textarea id="as-desc" placeholder="Qısa açıqlama..."></textarea></div>
+          <button class="btn btn-secondary btn-sm" onclick="adminAddStartup()">Əlavə et</button>
+          <div class="success-msg" id="as-success" style="margin-top:1rem"><h3>✓ Əlavə edildi!</h3></div>
+        </div>
+        <div style="font-family:'Playfair Display', Georgia, serif;font-weight:700;font-size:1.05rem;color:#0f172a;margin-bottom:1rem">Mövcud startaplar</div>
+        <table class="admin-table"><thead><tr><th>Ad</th><th>Mərhələ</th><th>Komanda</th><th>Kateqoriya</th></tr></thead><tbody id="admin-startups-list"></tbody></table>
+      </div>
+
+      <div class="admin-panel" id="admin-volunteers">
+        <div class="admin-title">Könüllü Müraciətlər</div>
+        <div class="admin-sub" id="volunteer-count">Yüklənir...</div>
+        <div style="overflow-x:auto">
+          <table class="admin-table"><thead><tr><th>Ad</th><th>Email</th><th>Telefon</th><th>İxtisas</th><th>Kurs</th><th>Maraq</th><th>Tarix</th></tr></thead><tbody id="admin-volunteers-list"></tbody></table>
+        </div>
+      </div>
+
+      <div class="admin-panel" id="admin-startup-apps">
+        <div class="admin-title">Startap Müraciətləri</div>
+        <div class="admin-sub" id="startup-apps-count">Yüklənir...</div>
+        <div style="overflow-x:auto">
+          <table class="admin-table"><thead><tr><th>Layihə</th><th>Mərhələ</th><th>Komanda</th><th>Gözləntilər</th><th>Tarix</th></tr></thead><tbody id="admin-startup-apps-list"></tbody></table>
+        </div>
+      </div>
+
+      <div class="admin-panel" id="admin-volunteer-hub">
+        <div class="admin-title">Könüllü Manual Əlavə Et</div>
+        <div class="admin-sub">Aşağıdakı sistem vasitəsilə könüllüləri manual olaraq əlavə edin və idarə edin</div>
+        <div style="margin-top:1.5rem;border-radius:12px;overflow:hidden;border:1px solid #e2e8f0;box-shadow:0 2px 12px rgba(0,0,0,0.06)">
+          <iframe 
+            src="https://volunteer-hub-gamma.vercel.app/" 
+            style="width:100%;height:82vh;border:none;display:block;"
+            title="Volunteer Hub - Manual Management"
+            allow="clipboard-write"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════
+//  DATA
+// ═══════════════════════════════════
+const startups = [
+  { id:1, name:'AgroSmart AZ', desc:'Aqrar sektoru üçün IoT əsaslı ağıllı kənd təsərrüfatı sistemi. Sensörlar vasitəsilə torpaq rütubəti, hava şəraiti və bitki sağlamlığı real vaxt rejimində izlənilir.', team:'5 nəfər', stage:'mvp', category:'AgriTech', image:'https://sairs.az/wp-content/uploads/2024/07/SAIRS-2.webp' },
+  { id:2, name:'MedConnect', desc:'Həkimlər və xəstələri birbaşa əlaqələndirən telemedisin platforması. Video konsultasiya, resept yazmaq və analiz nəticələrini izləmək.', team:'4 nəfər', stage:'ready', category:'HealthTech', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW75xT9pMiRa9GPmkKZXUP8TC4von15i_HVA&s' },
+  { id:3, name:'EduVerse', desc:'VR texnologiyası ilə interaktiv dərs mühiti. Tələbələr tarix dərslərini virtual muzeylərdə keçirir, kimya eksperimentlərini simulyasiya edir.', team:'6 nəfər', stage:'mvp', category:'EdTech', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSMygwAjTlkX2UJeRk2woObepJBChvvh2Zw&s' },
+  { id:4, name:'PayGo AZ', desc:'Azərbaycan kiçik biznesləri üçün sadə, sürətli mobil ödəniş həlli. QR kodla anında pul köçürmə, günlük hesabat.', team:'3 nəfər', stage:'ready', category:'FinTech', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbeSb7gTezlVgqhMmJ1MQ0ad7A-Ue9g-txg&s' },
+  { id:5, name:'CargoRoute', desc:'Yük daşıma şirkətlərini sürücülərlə birləşdirən B2B marketpleys. Maşın tapma vaxtını 80% azaldır.', team:'4 nəfər', stage:'mvp', category:'LogisTech', image:'https://static.vecteezy.com/system/resources/previews/070/448/281/non_2x/cargo-ship-marine-voyage-travel-dotted-path-route-illustration-map-isolated-background-navigation-transport-sea-journey-trip-design-infographic-concept-symbol-graphic-element-tourism-vector.jpg' },
+  { id:6, name:'CleanCity', desc:'Şəhər idarəetməsi üçün smart tullantı idarəetmə sistemi. IoT sensorlar zibil qutusu dolluğunu bildirir, marşrutu optimallaşdırır.', team:'3 nəfər', stage:'idea', category:'SmartCity', image:'https://www.greenwarrior.co.in/images/resource/16.jpg'  },
+  { id:7, name:'TalentHub AZ', desc:'IT sahəsindəki Azərbaycanlı mütəxəssisləri beynəlxalq şirkətlərə əlaqələndirən platforma. AI əsaslı uyğunluq sistemi.', team:'5 nəfər', stage:'mvp', category:'HR Tech',image:'https://play-lh.googleusercontent.com/FRxKAdJTclPayBxVN3WBms9qQ-SvOHAb-aCNq1GcoyWlQKZNP1mUqODmQlXi5cKeBs0'  },
+  { id:8, name:'FoodBox', desc:'Ev bişirmiş yeməkləri sifariş edə biləcəyiniz platforma. Məhəllə xörəkçiləri öz reseptlərini satır.', team:'3 nəfər', stage:'idea', category:'FoodTech', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXaHVs0w-7GCIl1JryRvx_bJQaDfiHQGORIg&s'  },
+  { id:9, name:'SolarHome AZ', desc:'Ev üçün günəş paneli quraşdırma, monitoring və enerji satışı sistemi. Tam ekosistem həlli.', team:'7 nəfər', stage:'ready', category:'CleanTech', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl5Zf97v1KU_OOQoU7eSe_IxX215zdWVV3RQ&s' },
+];
+
+const mentors = [
+  { id:1, name:'Elnur Hüseynov', role:'CTO @ TechCorp AZ', specialty:'Bulud texnologiyaları, Arxitektura', bio:'15 illik proqramlaşdırma təcrübəsi. Google ve Amazon-da remote çalışmış, 3 startap əsaslandırmışdır.', image:'https://i.pinimg.com/736x/8b/67/9a/8b679a8e85572fa52abe386fb703c7db.jpg' },
+  { id:2, name:'Aytən Məmmədova', role:'Product Manager @ PAŞA Tech', specialty:'Product strategy, UX design', bio:'10+ il product idarəetmə. Stanford MBA. Azərbaycanda ən uğurlu qadın texnoloqlardan biri.', image:'https://i.pinimg.com/736x/dd/fc/ac/ddfcac65a67bc5ed50019958e99acfdd.jpg' },
+  { id:3, name:'Rauf Əliyev', role:'Founder @ StartAZ Fund', specialty:'Sahibkarlıq, Maliyyə, Venture', bio:'Azərbaycanın ilk venture kapital fondunun qurucusu. 20+ startapa investisiya etmişdir. Forbes 40 under 40.', image:'https://i.pinimg.com/1200x/f7/d6/71/f7d671f123531a651b2a640c6fa9ee22.jpg' },
+  { id:4, name:'Leyla Qasımova', role:'AI Lead @ Microsoft Azerbaijan', specialty:'Süni intellekt, Machine learning', bio:'MIT-də doktorantura. Azərbaycanda AI tədqiqatının öncülüdür. 12 beynəlxalq elmi məqalənin müəllifi.', image:'https://i.pinimg.com/736x/74/60/ff/7460ff20f74b3a4ba3c521462b2d4074.jpg' },
+  { id:5, name:'Murad Nəcəfov', role:'Serial Entrepreneur', specialty:'Biznes inkişafı, Marketing', bio:'4 uğurlu startap əsaslandırmış serial sahibkar. Son layihəsi ₼2.5M-lıq investisiya cəlb etdi.', image:'https://i.pinimg.com/1200x/12/1c/b4/121cb48ddc0dde82e1e3581770d1c18b.jpg' },
+  { id:6, name:'Zəhra Abbasova', role:'UX Director @ Design Studio', specialty:'UI/UX Design, Branding', bio:'100+ müəssisənin dizayn strategiyasını hazırlamış. Awwwards mükafatçısı, Behance Top Creator.', emoji:'🎨' },
+  { id:7, name:'Tural İbrahimov', role:'DevOps Lead @ Bank of Baku', specialty:'DevOps, Kubernetes, Security', bio:'Aparıcı banklarda infrastruktur quran mühəndis. Open source 8 layihənin kontribyutoru.', emoji:'🔧' },
+  { id:8, name:'Nərmin Kərimova', role:'CEO @ GreenTech AZ', specialty:'Yaşıl texnologiya, B2G', bio:'Ətraf mühit mühəndisi. Azərbaycanda 5 ekoloji texnologiya layihəsini həyata keçirmişdir.', emoji:'🌿' },
+];
+
+const programs = [
+  { id:1, title:'Qrafik Dizayn', icon:'🎨', desc:'Adobe Illustrator, Photoshop, Figma ilə peşəkar qrafik dizayn. Logo, poster, sosial media dizaynı, brendinq əsasları.', duration:'3 ay', level:'Başlanğıc', spots:20 },
+  { id:2, title:'Süni İntellekt ilə Yaradıcılıq', icon:'🤖', desc:'ChatGPT, Midjourney, Stable Diffusion ilə AI alətlərindən istifadə. Mətn, şəkil, musiqi yaratmaq.', duration:'2 ay', level:'Başlanğıc', spots:25 },
+  { id:3, title:'Kiber Təhlükəsizlik', icon:'🛡️', desc:'Şəbəkə təhlükəsizliyi, etik hacking, CTF yarışları üçün hazırlıq. Kali Linux, Metasploit, OWASP Top 10.', duration:'4 ay', level:'Orta', spots:15 },
+  { id:4, title:'Frontend Development', icon:'💻', desc:'HTML5, CSS3, JavaScript, React.js ilə müasir veb interfeys. Portfolio hazırlığı, real layihə təcrübəsi.', duration:'4 ay', level:'Başlanğıc', spots:30 },
+  { id:5, title:'Backend Development', icon:'⚙️', desc:'Python, Node.js, REST API, Docker ilə backend həlləri. Real server tətbiqləri ilə praktik öyrənmə.', duration:'5 ay', level:'Orta', spots:20 },
+  { id:6, title:'Robototexnika', icon:'🦾', desc:'Arduino, Raspberry Pi, mexatronika əsasları. Robot dizaynı, sensor inteqrasiyası, real dünya layihələri.', duration:'3 ay', level:'Başlanğıc', spots:15 },
+];
+
+const clubs = [
+  { name:'Inno Eko', icon:'🌍', desc:'Ətraf mühitin qorunması, ekoloji texnologiyalar, yaşıl sahibkarlıq.', area:'Ekoloji texnologiya' },
+  { name:'Yaşıl Enerji', icon:'⚡', desc:'Günəş, külək, hidro enerji mənbələri. Bərpaolunan enerji layihələri.', area:'Enerji texnologiyası' },
+  { name:'Cyber Team', icon:'🛡️', desc:'CTF yarışları, pentesting, Bug Bounty. Rəqəmsal aləmi qoruyuruq.', area:'Kibertəhlükəsizlik' },
+  { name:'Game Development', icon:'🎮', desc:'Unity, Unreal Engine ilə indie oyun geliştirme.', area:'Oyun geliştirme' },
+  { name:'Mühəndis Proqramçılar', icon:'⚙️', desc:'Hardware + software inteqrasiyası, IoT layihələri.', area:'Mühəndislik & Proqramlaşdırma' },
+  { name:'Inno Materials', icon:'🔬', desc:'Nanomateriallar, 3D çap. Gələcəyin materiallarını sınayırıq.', area:'Material elmləri' },
+  { name:'Modern Dizaynerlər', icon:'✏️', desc:'UI/UX, grafik dizayn, motion graphics, brendinq.', area:'Dizayn & Kreativlik' },
+  { name:'Qalaktika Klubu', icon:'🚀', desc:'Kosmos texnologiyaları, ulduz müşahidəsi, satelit layihələri.', area:'Kosmik texnologiya' },
+];
+
+  const events = [
+    { id:1, title:'AI Hackathon 2026', cat:'hackathon', date:'15 May 2026', image:'https://media.licdn.com/dms/image/v2/D4D12AQGplGi6z8IXjA/article-cover_image-shrink_720_1280/B4DZyT8ku8IwAI-/0/1772008658270?e=2147483647&v=beta&t=utY3ZQJEqMC3qCqowqyTafAo8lpdQSn0KUgvYLHO78Y' , desc:'48 saatlıq süni intellekt hackathonu. Ən yaxşı layihəyə ₼5000 mükafat.', detail:'ATU İnnovasiya Mərkəzinin ən böyük tədbirləri olan AI Hackathon 2026 bu il 15 May tarixdə keçiriləcək. 48 saat ərzində komandalar həqiqi iş dünyası problemlərini süni intellekt vasitəsilə həll edəcəklər. Ən yaxşı 3 layihəyə ₼5000, ₼3000 və ₼1500 mükafat verilir. Qeydiyyat haqsızdır, lakin yerlərin sayı məhduddur.' },
+    { id:2, title:'UX Design Workshop', cat:'workshop', date:'22 Aprel 2026', image:'https://media.nngroup.com/media/articles/opengraph_images/5-ux-workshops.png', desc:'Figma ilə prototip hazırlamaq, istifadəçi tədqiqatı, A/B test metodologiyası.', detail:'Sənaye ekspertlərinin rəhbərliyi ilə tam gün UX Design workshop. Figma ilə wire-frame, prototip yaratmaq mövzularını əhatə edəcəyik. Sertifikat veriləcək.' },
+    { id:3, title:'Sahibkarlıq Seminarı', cat:'seminar', date:'8 May 2026', image:'https://sgfgroup.az/wp-content/uploads/2025/07/sahibkarliq-fealiyyeti.webp', desc:'Startap qurmaq, ilk investisiya əldə etmək, Azərbaycanda biznes hüququ.', detail:'Azərbaycanın aparıcı sahibkarları ilə panel müzakirəsi. Startap qurmaq üçün ilk addımlar, investor cəlb etmək mövzuları əhatə ediləcək.' },
+    { id:4, title:'Robototexnika Olimpiadası', cat:'hackathon', date:'1 İyun 2026', image:'https://img9.irna.ir/d/r2/2024/08/09/4/171326578.jpg?ts=1723211610235', desc:'Arduino ilə robot yarışması. Xüsusi halqa üzərindən sürət yarışması.', detail:'ATU Robototexnika Klubunun il ərzindəki əsas tədbirləri. Komandalar özləri hazırladıqları robotları xüsusi yarış halqasında üz-üzə gətirir.' },
+    { id:5, title:'Python Bootcamp', cat:'workshop', date:'3 May 2026', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD_lijsJY0DxLnippDljJbAAjyyhJrcFAGgQ&s', desc:'3 günlük intensiv Python proqramlaşdırma bootcamp-i. Data science, avtomatlaşdırma, API.', detail:'Yeni başlayanlar üçün 3 günlük intensiv Python bootcamp. Gün 1: Əsaslar, Gün 2: Pandas/NumPy, Gün 3: FastAPI. Yerlərin sayı 30 ilə məhduddur.' },
+    { id:6, title:'Blockchain & Web3 Seminarı', cat:'seminar', date:'18 Aprel 2026', image:'https://images.hive.blog/0x0/https://files.peakd.com/file/peakd-hive/mcsamm/23tbkSHCj65qpSuYhhcXhDmxXnrNYEZe7z2ELBbi8WfgU7E9LBaxvJwKRcwYH636FFFFE.png', desc:'Blockchain texnologiyası, smart contract, NFT, DeFi mövzuları üzrə ekspert müzakirəsi.', detail:'Web3 dünyasına giriş seminarı. Blockchain əsasları, Ethereum smart contractlar, DeFi protokollar mövzuları əhatə ediləcək. Sertifikat veriləcək.' },
+  ];
+
+const news = [
+  { id:1, title:'ATU İnnovasiya Mərkəzi Beynəlxalq Müsabiqədə Birinci Oldu', date:'12 Aprel 2026', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwap7pJ8rP5VPtrrzK7HSSUKQ-sz9CD8AL7Q&s', bg:'#f0f7ff', excerpt:'Mərkəzimizin tələbə komandası Praqa-da keçirilən EuroInno 2026 müsabiqəsində birinci yeri tutaraq ölkəmizi şərəflə təmsil etdi.', body:'ATU İnnovasiya Mərkəzinin tələbə komandası Praqa-da keçirilən EuroInno 2025 Beynəlxalq İnnovasiya Müsabiqəsinin qalibləri elan edildi. 27 ölkədən 180-dən çox komandanın iştirak etdiyi yarışmada "AgriSmart AZ" layihəsi birinci mükafata layiq görüldü.' },
+  { id:2, title:'Yeni Süni İntellekt Proqramı Açılışı — 200 Yer', date:'5 Aprel 2026', image:'https://apa.az/storage/news/2024/october/04/big/66ffe8d73ec4166ffe8d73ec42172804731966ffe8d73ec3f66ffe8d73ec40.png', bg:'#fdf4ff', excerpt:'Növbəti semestrdən etibarən yeni AI proqramı açılacaq. Tamamilə ödənişsiz, sertifikatlı kursda 200 yer mövcuddur.', body:'ATU İnnovasiya Mərkəzi 2025-2026 tədris ilindən etibarən "Süni İntellekt Mütəxəssisi" proqramını açacağını rəsmi olaraq elan etdi. 6 aylıq intensiv proqram 200 yerə malik olacaq.' },
+  { id:3, title:'₼4 Milyonluq İnvestisiya Cəlb Edildi', date:'28 Mart 2026', image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ98YJo3lbJ428e1dQHk5BeX1F-wIz_ZaX1FA&s', bg:'#fffbeb', excerpt:'2025-2026 tədris ilində mərkəzimizdən çıxmış startaplar ümumilikdə ₼4 milyondan artıq investisiya cəlb etdi.', body:'ATU İnnovasiya Mərkəzinin 2024-2025 tədris ili nəticələri elan edildi. Bu il mərkəzdə inkubasiya olunan startaplar birlikdə ₼4.2 milyondan artıq investisiya cəlb etdi.' },
+  { id:4, title:'Hackathon Qalibləri Elan Olundu', date:'20 Mart 2026', image:'https://banker.az/wp-content/uploads/2025/01/0.jpg', bg:'#f0fdf4', excerpt:'Mart ayında keçirilən Spring Hackathon-un qalibləri müəyyənləşdi. 48 saat, 32 komanda, 3 mükafat.', body:'ATU İnnovasiya Mərkəzinin Spring Hackathon 2025 yarışması başa çatdı. 48 saat ərzindəki marafona 32 komanda — 160-dan çox tələbə iştirak etdi.' },
+  { id:5, title:'Google İlə Tərəfdaşlıq Müqaviləsi İmzalandı', date:'15 Mart 2026', emoji:'🤝', bg:'#f0fdf4', excerpt:'ATU İnnovasiya Mərkəzi ilə Google Azərbaycan arasında 2 illik strateji tərəfdaşlıq müqaviləsi imzalandı.', body:'ATU İnnovasiya Mərkəzi ilə Google Azərbaycan arasında imzalanan tərəfdaşlıq çərçivəsində tələbələrə Google Cloud kredit paketi, sertifikasiya tədrisləri ve Google mütəxəssislərinin mentorluğu təklif ediləcək.' },
+  { id:6, title:'İnnovasiya Həftəsi 2026 — Proqram Elan Edildi', date:'8 Mart 2026', emoji:'📅', bg:'#eef2ff', excerpt:'May ayında keçiriləcək İnnovasiya Həftəsinin tam proqramı açıqlandı. 5 gün, 20 tədbir, 50+ spiker.', body:'ATU İnnovasiya Mərkəzinin ənənəvi İnnovasiya Həftəsi bu il 19-23 May tarixlərə planlaşdırılmışdır. 5 günlük intensiv proqram çərçivəsində 20 tədbir, 50+ spiker iştirak edəcək.' },
+];
+
+const partners = [
+  { name:'PASHA Holding', logo:'🏛️', type:'Korporativ' },
+  { name:'Google Azerbaijan', logo:'🔍', type:'Tech' },
+  { name:'Microsoft Azerbaijan', logo:'🪟', type:'Tech' },
+  { name:'Kapital Bank', logo:'🏦', type:'Maliyyə' },
+  { name:'AzərGold', logo:'🥇', type:'Sənaye' },
+  { name:'Azercell Telecom', logo:'📡', type:'Telekom' },
+  { name:'SOCAR', logo:'⛽', type:'Enerji' },
+  { name:'Bakcell', logo:'📶', type:'Telekom' },
+  { name:'ABB Bank', logo:'💳', type:'Maliyyə' },
+  { name:'Rəqəmsal İnkişaf Nazirliyi', logo:'🏛️', type:'Dövlət' },
+  { name:'UNDP Azerbaijan', logo:'🌐', type:'Beynəlxalq' },
+  { name:'Deloitte Azerbaijan', logo:'🔷', type:'Konsalting' },
+  { name:'PwC Azerbaijan', logo:'🔶', type:'Konsalting' },
+  { name:'Startup Azerbaijan', logo:'💡', type:'Ekosistem' },
+  { name:'ADA University', logo:'🎓', type:'Akademik' },
+  { name:'BDU', logo:'📚', type:'Akademik' },
+  { name:'Baku Higher Oil School', logo:'⚗️', type:'Akademik' },
+  { name:'Azerbaijan Silicon Valley', logo:'🚀', type:'Ekosistem' },
+];
+
+// ═══════════════════════════════════
+//  HELPERS
+// ═══════════════════════════════════
+function getAllStartups() {
+  const saved = JSON.parse(localStorage.getItem('custom_startups') || '[]');
+  return [...startups, ...saved];
+}
+function getAllPrograms() {
+  const saved = JSON.parse(localStorage.getItem('custom_programs') || '[]');
+  return [...programs, ...saved];
+}
+function getAllEvents() {
+  const saved = JSON.parse(localStorage.getItem('custom_events') || '[]');
+  return [...events, ...saved.map((e,i) => ({...e, id:'c'+i}))];
+}
+
+// ═══════════════════════════════════
+//  RENDER
+// ═══════════════════════════════════
+function startupCard(s) {
+  const stages = {idea:['label-idea', t('stageIdea')],mvp:['label-mvp','MVP'],ready:['label-ready', t('stageReady')]};
+  const [cls, lbl] = stages[s.stage] || ['label-idea','İdeya'];
+  return `<div class="card">
+   <div class="card-visual">
+    <img src="${s.image}" alt="${s.name}" class="card-img">
+</div>
+    <span class="card-label ${cls}">${lbl}</span>
+    <div class="card-title">${s.name}</div>
+    <div class="card-desc">${s.desc}</div>
+    <div class="card-meta">
+      <span class="card-meta-item">👥 ${s.team}</span>
+      <span class="card-meta-item">🏷 ${s.category}</span>
+    </div>
+  </div>`;
+}
+
+function renderHomeStartups() {
+  const el = document.getElementById('home-startups');
+  if (el) el.innerHTML = startups.slice(0,3).map(startupCard).join('');
+}
+function renderStartups(stage='all', search='') {
+  let data = getAllStartups();
+  if (stage !== 'all') data = data.filter(s => s.stage === stage);
+  if (search) data = data.filter(s => s.name.toLowerCase().includes(search.toLowerCase()) || s.desc.toLowerCase().includes(search.toLowerCase()));
+  const el = document.getElementById('startups-grid');
+  if (el) el.innerHTML = data.length ? data.map(startupCard).join('') : `<p style="color:#94a3b8;grid-column:1/-1;text-align:center;padding:3rem">${t('noResults')}</p>`;
+}
+
+let curStage = 'all';
+function filterByStage(stage, btn) {
+  curStage = stage;
+  document.querySelectorAll('#page-startups .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderStartups(stage, document.getElementById('startup-search')?.value || '');
+}
+function filterStartups() {
+  renderStartups(curStage, document.getElementById('startup-search')?.value || '');
+}
+
+function renderMentors(search='') {
+  let data = mentors;
+  if (search) data = data.filter(m => [m.name, m.role, m.specialty].some(f => f.toLowerCase().includes(search)));
+  
+  const el = document.getElementById('mentors-grid');
+  if (el) el.innerHTML = data.map(m => `
+    <div class="mentor-card">
+      <div class="mentor-avatar">
+        <img src="${m.image}" alt="${m.name}" class="mentor-img">
+      </div>
+      <div class="mentor-name">${m.name}</div>
+      <div class="mentor-role">${m.role}</div>
+      <div class="mentor-specialty">📌 ${m.specialty}</div>
+      <div class="mentor-bio">${m.bio}</div>
+      <div class="mentor-actions">
+        <button class="mentor-btn primary" onclick="void(0)">LinkedIn</button>
+        <button class="mentor-btn" onclick="void(0)">Profil →</button>
+      </div>
+    </div>`).join('');
+}
+function filterMentors() {
+  renderMentors(document.getElementById('mentor-search')?.value?.toLowerCase() || '');
+}
+
+function renderPrograms() {
+  const el = document.getElementById('programs-grid');
+  if (el) el.innerHTML = getAllPrograms().map(p => `
+    <div class="program-card">
+      <div class="program-icon">${p.icon}</div>
+      <div class="program-title">${p.title}</div>
+      <div class="program-desc">${p.desc}</div>
+      <div class="program-badges">
+        <span class="badge">⏱ ${p.duration}</span>
+        <span class="badge">📊 ${p.level}</span>
+        ${p.spots ? `<span class="badge">🎓 ${p.spots} yer</span>` : ''}
+      </div>
+      <button class="btn btn-outline btn-sm" style="margin-top:auto" onclick="showPage('apply')">${t('programBtn')}</button>
+    </div>`).join('');
+}
+
+function renderClubs() {
+  const el = document.getElementById('clubs-grid');
+  if (el) el.innerHTML = clubs.map(c => `
+    <div class="club-card">
+      <div class="club-icon">${c.icon}</div>
+      <div>
+        <div class="club-title">${c.name}</div>
+        <div class="club-desc">${c.desc}</div>
+        <div class="club-area">${c.area}</div>
+      </div>
+    </div>`).join('');
+}
+
+function eventCard(e) {
+  const cats = {seminar:['label-seminar', t('catSeminar')],workshop:['label-workshop', t('catWorkshop')],hackathon:['label-hackathon', t('catHackathon')]};
+  const [cls, lbl] = cats[e.cat] || ['label-seminar', t('catSeminar')];
+  return `
+    <div class="card" style="cursor:pointer" onclick="showEventDetail('${e.id}')">
+      <div class="card-visual">
+        <img src="${e.image}" alt="${e.title}">
+      </div>
+      <span class="card-label ${cls}">${lbl}</span>
+      <div class="card-title">${e.title}</div>
+      <div class="card-desc">${e.desc}</div>
+      <div class="card-footer">
+        <span class="card-meta-item">📅 ${e.date}</span>
+        <span class="card-link">${t('moreDetail')}</span>
+      </div>
+    </div>`;
+}
+
+function renderHomeEvents() {
+  const el = document.getElementById('home-events');
+  if (el) el.innerHTML = events.slice(0,3).map(eventCard).join('');
+}
+
+let curEventCat = 'all';
+function renderEvents(cat='all') {
+  let data = getAllEvents();
+  if (cat !== 'all') data = data.filter(e => e.cat === cat);
+  const el = document.getElementById('events-grid');
+  if (el) el.innerHTML = data.map(eventCard).join('');
+}
+function filterEvents(cat, btn) {
+  curEventCat = cat;
+  document.querySelectorAll('#page-events .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderEvents(cat);
+}
+
+function showEventDetail(id) {
+  const all = getAllEvents();
+  const ev = all.find(e => String(e.id) === String(id));
+  if (!ev) return;
+  
+  const cats = {
+    seminar: ['label-seminar', t('catSeminar')],
+    workshop: ['label-workshop', t('catWorkshop')],
+    hackathon: ['label-hackathon', t('catHackathon')]
+  };
+  const [cls, lbl] = cats[ev.cat] || ['label-seminar', t('catSeminar')];
+
+  document.getElementById('event-detail-content').innerHTML = `
+    <button class="back-link" onclick="showPage('events')">${t('backLink')}</button>
+    
+    <div class="detail-hero">
+        <img src="${ev.image}" alt="${ev.title}" class="detail-banner-img">
+    </div>
+
+    <span class="card-label ${cls}" style="margin-bottom:1rem;display:inline-block">${lbl}</span>
+    <div class="detail-title">${ev.title}</div>
+    <p style="font-size:.82rem;color:#94a3b8;margin-bottom:1.5rem">📅 ${ev.date}</p>
+    <div class="detail-body">${ev.detail || ev.desc}</div>
+    
+    <div style="margin-top:2.5rem;display:flex;gap:.75rem;flex-wrap:wrap">
+      <button class="btn btn-secondary" onclick="showPage('apply')">${t('eventRegBtn')}</button>
+      <button class="btn btn-outline" onclick="showPage('events')">${t('eventAllBtn')}</button>
+    </div>`;
+
+  showPage('event-detail');
+}
+
+function renderNews() {
+  const el = document.getElementById('news-grid');
+  if (el) el.innerHTML = news.map(n => `
+    <div class="news-card" onclick="showNewsDetail(${n.id})">
+      <div class="news-thumb">
+        <img src="${n.image}" alt="${n.title}" class="news-img">
+      </div>
+      <div class="news-body">
+        <div class="news-date">📅 ${n.date}</div>
+        <div class="news-title">${n.title}</div>
+        <div class="news-excerpt">${n.excerpt}</div>
+        <button class="btn btn-outline btn-sm" style="margin-top:1.25rem">${t('newsReadMore')}</button>
+      </div>
+    </div>`).join('');
+}
+
+function showNewsDetail(id) {
+  const n = news.find(x => x.id === id);
+  if (!n) return;
+  
+  document.getElementById('news-detail-content').innerHTML = `
+    <button class="back-link" onclick="showPage('news')">${t('newsBack')}</button>
+    
+    <div class="detail-hero">
+       <img src="${n.image}" alt="${n.title}" class="detail-banner-img">
+    </div>
+
+    <p style="font-size:.8rem;color:#94a3b8;margin-bottom:0.75rem">📅 ${n.date}</p>
+    <div class="detail-title">${n.title}</div>
+    <div class="detail-body" style="margin-top:1.5rem">${n.body}</div>
+    
+    <div style="margin-top:2.5rem;display:flex;gap:.75rem;flex-wrap:wrap">
+      <button class="btn btn-outline" onclick="showPage('news')">${t('newsAllBtn')}</button>
+      <button class="btn btn-secondary" onclick="showPage('apply')">${t('navApply')} →</button>
+    </div>`;
+    
+  showPage('news-detail');
+}
+
+function renderHomeNews() {
+  const el = document.getElementById('home-news');
+  if (el) el.innerHTML = news.slice(0,3).map(n => `
+    <div class="news-card" onclick="showNewsDetail(${n.id})">
+      <div class="news-thumb">
+        <img src="${n.image}" alt="${n.title}" class="news-img">
+      </div>
+      <div class="news-body">
+        <div class="news-date">📅 ${n.date}</div>
+        <div class="news-title">${n.title}</div>
+        <div class="news-excerpt">${n.excerpt}</div>
+      </div>
+    </div>`).join('');
+}
+
+function renderPartners() {
+  const el = document.getElementById('partners-grid');
+  if (el) el.innerHTML = partners.map(p => `
+    <div class="partner-card">
+      <div class="partner-logo">${p.logo}</div>
+      <div class="partner-name">${p.name}</div>
+      <div class="partner-type">${p.type}</div>
+    </div>`).join('');
+}
+
+// ═══════════════════════════════════
+//  NAVIGATION
+// ═══════════════════════════════════
+function showPage(name, navEl) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const page = document.getElementById('page-' + name);
+  if (page) { page.classList.add('active'); window.scrollTo({top:0}); }
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+  if (navEl) navEl.classList.add('active');
+  else { const f = document.querySelector(`.nav-link[data-page="${name}"]`); if (f) f.classList.add('active'); }
+  document.getElementById('navLinks').classList.remove('open');
+  const renders = {
+    home: () => { renderHomeStartups(); renderHomeEvents(); renderHomeNews(); },
+    startups: renderStartups,
+    mentors: () => renderMentors(),
+    programs: () => { renderPrograms(); renderClubs(); },
+    events: renderEvents,
+    news: renderNews,
+    partners: renderPartners,
+    admin: renderAdmin,
+  };
+  if (renders[name]) renders[name]();
+}
+
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+// ═══════════════════════════════════
+//  i18n TRANSLATION SYSTEM
+// ═══════════════════════════════════
+const translations = {
+  az: {
+    // Navbar
+    navHome: 'Ana Səhifə', navStartups: 'Startaplar', navMentors: 'Mentorlar',
+    navPrograms: 'Proqramlar', navEvents: 'Tədbirlər', navNews: 'Xəbərlər',
+    navPartners: 'Tərəfdaşlar', navContact: 'Əlaqə',
+    navApply: 'Müraciət et', navAdmin: 'Admin', navBrand: 'ATU İnnovasiya',
+    navSubtitle: 'Azərbaycan Texnologiya Universiteti',
+
+    // Hero
+    heroTitle: 'ATU İnnovasiya Mərkəzi',
+    heroDesc: ' — startapdan mentora, inkubasiyadan sertifikatlı proqramlara qədər tam rəqəmsal ekosistem.',
+    heroCta1: 'Müraciət et →', heroCta2: 'Proqramlara bax',
+
+    // About
+    aboutEyebrow: 'Haqqımızda', aboutTitle: 'İnnovasiya Mərkəzi nədir?',
+    aboutDesc: 'Universitetin məqsədlərinə və strateji inkişaf tələblərinə uyğun olaraq, innovasiya strategiyasının planlaşdırılmasını təmin edir. İnnovativ mühitin təşkili: universitet daxilində innovativ düşüncəyə, problem həllinə və təşəbbüskarlığa təşviq edən tədbirlər, seminarlar və təlimlər təşkil edərək innovasiya mədəniyyətinin formalaşmasına yardım etmək.',
+    feat1Title: 'İnkubasiya Proqramı', feat1Desc: 'Startaplar üçün 6 aylıq sürətləndirilmiş inkubasiya dəstəyi',
+    feat2Title: 'Ödənişsiz Təlimlər', feat2Desc: '6 istiqamət üzrə peşəkar kurrikulum, sertifikat ilə',
+    feat3Title: 'Mentor Şəbəkəsi', feat3Desc: '45+ sənaye liderindən birbaşa dəstək və yönlendirme',
+    stat1: 'Texniki proqram', stat2: 'Aktiv klub', stat3: 'Beynəlxalq mükafat', stat4: 'Beynəlxalq tərəfdaş',
+
+    // Sections
+    startupEyebrow: 'Startap Ekosistemi', startupTitle: 'Seçilmiş layihələr', viewAll: 'Hamısına bax →',
+    eventsEyebrow: 'Tədbirlər', eventsTitle: 'Yaxınlaşan tədbirlər',
+    ctaTitle: 'Ödənişsiz Təlim Proqramları',
+    ctaDesc: 'Qrafik dizayndan süni intellektə — 6 istiqamət, tamamilə pulsuz, sertifikatlı.',
+    ctaBtn1: 'Proqramlara bax', ctaBtn2: 'Müraciət et',
+    newsEyebrow: 'Xəbərlər', newsTitle: 'Son xəbərlər',
+
+    // Footer
+    footerBrand: 'ATU İnnovasiya Mərkəzi',
+    footerDesc: 'Azərbaycan Texnologiya Universitetinin nəzdindəki innovasiya və sahibkarlıq ekosistemi. Texnologiyanı insanlar üçün işlədirik.',
+    footerCol1: 'Platforma', footerCol2: 'Məlumat', footerCol3: 'Əlaqə',
+    footerCopy: '© 2026 ATU İnnovasiya Mərkəzi. Bütün hüquqlar qorunur.',
+    footerHours: 'B.e. — Cümə, 09:00–18:00',
+
+    // Startups page
+    startupsEyebrow: 'Ekosistem', startupsPageTitle: 'Startap Ekosistemi',
+    startupsPageSub: 'Mərkəzimizdəki bütün innovativ layihələr',
+    startupSearch: 'Startap axtar...',
+    filterAll: 'Hamısı', filterIdea: 'İdeya', filterMvp: 'MVP', filterReady: 'Hazır',
+    stageIdea: 'İdeya', stageMvp: 'MVP', stageReady: 'Hazır',
+    noResults: 'Nəticə tapılmadı.',
+
+    // Mentors page
+    mentorsEyebrow: 'Mentor Şəbəkəsi', mentorsTitle: 'Sənaye liderləri',
+    mentorsSub: 'Azərbaycanın aparıcı texnoloq və sahibkarları ilə birbaşa əlaqə',
+    mentorSearch: 'Mentor, ixtisas, şirkət axtar...',
+    mentorLinkedIn: 'LinkedIn', mentorProfile: 'Profil →',
+
+    // Programs page
+    programsEyebrow: 'Ödənişsiz Proqramlar', programsTitle: 'Peşəkar Təlim Proqramları',
+    programsSub: 'Sertifikatlı, mentorlu, real layihə əsaslı — tamamilə pulsuz.',
+    req1Title: 'İştirak tələbləri', req1i1: 'ATU tələbəsi olmaq', req1i2: 'Minimum 1-ci kurs', req1i3: 'Orta bal ≥ 60', req1i4: 'Müsahibədən keçmək',
+    req2Title: 'Kimlər iştirak edə bilər', req2i1: 'Bütün ixtisas tələbələri', req2i2: 'Magistr tələbələri', req2i3: 'ATU məzunları (1 il)', req2i4: 'Tərəfdaş universitetlər',
+    req3Title: 'Əsas imkanlar', req3i1: 'Rəsmi sertifikat', req3i2: 'Mentor dəstəyi', req3i3: 'Real layihə təcrübəsi', req3i4: 'İş imkanları şəbəkəsi',
+    tabPrograms: '📚 Proqramlar', tabClubs: '🌱 Klublar',
+    programBtn: 'Qeydiyyatdan keç →',
+
+    // Events page
+    eventsPageEyebrow: 'Tədbirlər Təqvimi', eventsPageTitle: 'Seminar, Workshop, Hackathon',
+    eventsPageSub: 'Canlı tədbirlərdə iştirak edərək biliyinizi genişləndirib şəbəkənizi qurun.',
+    filterSeminar: 'Seminar', filterWorkshop: 'Workshop', filterHackathon: 'Hackathon',
+    catSeminar: 'Seminar', catWorkshop: 'Workshop', catHackathon: 'Hackathon',
+    moreDetail: 'Ətraflı →', backLink: '← Geri',
+    eventRegBtn: '🚀 Qeydiyyat et', eventAllBtn: 'Bütün tədbirlər',
+
+    // News page
+    newsPageEyebrow: 'Xəbərlər', newsPageTitle: 'Xəbərlər & Məqalələr',
+    newsPageSub: 'İnnovasiya dünyasından ən son yeniliklər',
+    newsReadMore: 'Oxu →', newsBack: '← Geri', newsAllBtn: 'Bütün xəbərlər',
+
+    // Partners page
+    partnersEyebrow: 'Tərəfdaşlar', partnersTitle: 'Ekosistemi birlikdə qururuq',
+    partnersSub: 'Azərbaycanın aparıcı şirkətləri, beynəlxalq qurumlar və universitetlər',
+    partnersCtaTitle: 'Tərəfdaş olun',
+    partnersCtaDesc: 'Şirkətinizin adını ATU İnnovasiya Mərkəzinin tərəfdaşları arasında görmək istəyirsiniz?',
+    partnersCtaBtn: 'Əlaqə saxlayın →',
+
+    // Apply page
+    applyEyebrow: 'Müraciət', applyTitle: 'Bizimlə birlikdə inkişaf edin',
+    applySub: 'Könüllü kimi qatılın və ya startapınızı inkubasiya proqramına əlavə edin',
+    tabVolunteer: '🙋 Könüllü Qeydiyyat', tabStartup: '🚀 Startap Müraciəti',
+    volTitle: 'Könüllü Qeydiyyat', volSub: 'İnnovasiya Mərkəzinə könüllü kimi qatılmaq üçün aşağıdakı formu doldurun.',
+    lName: 'Ad *', lSurname: 'Soyad *', lEmail: 'Email *', lPhone: 'Telefon *',
+    lMajor: 'İxtisas *', lYear: 'Kurs *', lInterest: 'Maraq sahəsi *',
+    lExperience: 'Təcrübəniz', lCV: 'CV yükləyin',
+    pName: 'Adınız', pSurname: 'Soyadınız', pEmail: 'email@atu.edu.az', pPhone: '+994 50 XXX XX XX',
+    selPlaceholder: 'Seçin...',
+    majors: ['Kompüter Mühəndisliyi','İnformasiya Texnologiyaları','Kibertəhlükəsizlik','Proqram Mühəndisliyi','Elektronika Mühəndisliyi','İqtisadiyyat','Menecment','Digər'],
+    years: ['1-ci kurs','2-ci kurs','3-cü kurs','4-cü kurs','Magistr'],
+    interests: ['Frontend Development','Backend Development','Qrafik Dizayn','Süni İntellekt','Kibertəhlükəsizlik','Robototexnika','Marketinq','Layihə idarəetməsi'],
+    expPlaceholder: 'Əvvəlki layihələr, sertifikatlar, fəaliyyətlər...',
+    volSubmit: 'Qeydiyyatdan keç →',
+    volSuccessTitle: '✓ Müraciətiniz qəbul edildi!', volSuccessDesc: 'Tezliklə sizinlə əlaqə saxlanılacaq. Email ünvanınızı yoxlayın.',
+
+    // Contact page
+    contactEyebrow: 'Əlaqə', contactTitle: 'Bizimlə əlaqə saxlayın',
+    contactSub: 'Suallarınız, təklifləriniz və ya əməkdaşlıq üçün bizə yazın',
+    contactInfo: 'Əlaqə məlumatları', contactForm: 'Mesaj göndər',
+    lCName: 'Adınız *', lCEmail: 'Email *', lCSubject: 'Mövzu *', lCMessage: 'Mesajınız *',
+    pCName: 'Adınız', pCEmail: 'email@domain.com', pCSubject: 'Mövzunu yazın...', pCMessage: 'Mesajınızı yazın...',
+    contactSendBtn: 'Göndər →',
+    contactSuccessTitle: '✓ Mesajınız göndərildi!', contactSuccessDesc: 'Tezliklə sizinlə əlaqə saxlayacağıq.',
+
+    // Admin
+    adminTitle: 'Admin Panel', adminWelcome: 'Xoş gəldiniz, Admin',
+    adminDashboard: '📊 Dashboard', adminAddEvent: '📅 Tədbir əlavə et',
+    adminAddProgram: '📚 Proqram əlavə et', adminAddStartup: '🚀 Startap əlavə et',
+    adminVolunteers: '👥 Könüllülər', adminStartupApps: '📋 Startap Müraciətlər',
+    adminLogout: 'Çıxış',
+
+    // Alert messages
+    alertFillAll: 'Zəhmət olmasa bütün məcburi sahələri doldurun.',
+    alertProjectName: 'Layihə adı məcburidir.',
+    alertFillContact: 'Bütün sahələri doldurun.',
+  },
+
+  en: {
+    navHome: 'Home', navStartups: 'Startups', navMentors: 'Mentors',
+    navPrograms: 'Programs', navEvents: 'Events', navNews: 'News',
+    navPartners: 'Partners', navContact: 'Contact',
+    navApply: 'Apply', navAdmin: 'Admin', navBrand: 'ATU Innovation',
+    navSubtitle: 'Azerbaijan Technology University',
+
+    heroTitle: 'ATU Innovation Center',
+    heroDesc: ' — from startup to mentor, from incubation to certified programs — a complete digital ecosystem.',
+    heroCta1: 'Apply Now →', heroCta2: 'View Programs',
+
+    aboutEyebrow: 'About Us', aboutTitle: 'What is the Innovation Center?',
+    aboutDesc: 'In line with the university\'s goals and strategic development requirements, it ensures the planning of the innovation strategy. Organizing an innovative environment: helping to form an innovation culture by organizing events, seminars and trainings within the university that encourage innovative thinking, problem solving and initiative.',
+    feat1Title: 'Incubation Program', feat1Desc: '6-month accelerated incubation support for startups',
+    feat2Title: 'Free Trainings', feat2Desc: 'Professional curriculum in 6 directions, with certificate',
+    feat3Title: 'Mentor Network', feat3Desc: 'Direct support and guidance from 45+ industry leaders',
+    stat1: 'Technical programs', stat2: 'Active clubs', stat3: 'International awards', stat4: 'International partners',
+
+    startupEyebrow: 'Startup Ecosystem', startupTitle: 'Featured projects', viewAll: 'View all →',
+    eventsEyebrow: 'Events', eventsTitle: 'Upcoming events',
+    ctaTitle: 'Free Training Programs',
+    ctaDesc: 'From graphic design to artificial intelligence — 6 directions, completely free, certified.',
+    ctaBtn1: 'View Programs', ctaBtn2: 'Apply',
+    newsEyebrow: 'News', newsTitle: 'Latest news',
+
+    footerBrand: 'ATU Innovation Center',
+    footerDesc: 'Innovation and entrepreneurship ecosystem under Azerbaijan Technology University. We make technology work for people.',
+    footerCol1: 'Platform', footerCol2: 'Information', footerCol3: 'Contact',
+    footerCopy: '© 2026 ATU Innovation Center. All rights reserved.',
+    footerHours: 'Mon — Fri, 09:00–18:00',
+
+    startupsEyebrow: 'Ecosystem', startupsPageTitle: 'Startup Ecosystem',
+    startupsPageSub: 'All innovative projects in our center',
+    startupSearch: 'Search startups...',
+    filterAll: 'All', filterIdea: 'Idea', filterMvp: 'MVP', filterReady: 'Ready',
+    stageIdea: 'Idea', stageMvp: 'MVP', stageReady: 'Ready',
+    noResults: 'No results found.',
+
+    mentorsEyebrow: 'Mentor Network', mentorsTitle: 'Industry leaders',
+    mentorsSub: 'Direct connection with Azerbaijan\'s leading technologists and entrepreneurs',
+    mentorSearch: 'Search mentor, specialty, company...',
+    mentorLinkedIn: 'LinkedIn', mentorProfile: 'Profile →',
+
+    programsEyebrow: 'Free Programs', programsTitle: 'Professional Training Programs',
+    programsSub: 'Certified, mentored, project-based — completely free.',
+    req1Title: 'Participation requirements', req1i1: 'Be an ATU student', req1i2: 'Minimum 1st year', req1i3: 'Average grade ≥ 60', req1i4: 'Pass an interview',
+    req2Title: 'Who can participate', req2i1: 'All major students', req2i2: 'Master students', req2i3: 'ATU graduates (1 year)', req2i4: 'Partner universities',
+    req3Title: 'Key opportunities', req3i1: 'Official certificate', req3i2: 'Mentor support', req3i3: 'Real project experience', req3i4: 'Job network',
+    tabPrograms: '📚 Programs', tabClubs: '🌱 Clubs',
+    programBtn: 'Register →',
+
+    eventsPageEyebrow: 'Events Calendar', eventsPageTitle: 'Seminars, Workshops, Hackathons',
+    eventsPageSub: 'Expand your knowledge and build your network by participating in live events.',
+    filterSeminar: 'Seminar', filterWorkshop: 'Workshop', filterHackathon: 'Hackathon',
+    catSeminar: 'Seminar', catWorkshop: 'Workshop', catHackathon: 'Hackathon',
+    moreDetail: 'Details →', backLink: '← Back',
+    eventRegBtn: '🚀 Register', eventAllBtn: 'All events',
+
+    newsPageEyebrow: 'News', newsPageTitle: 'News & Articles',
+    newsPageSub: 'The latest updates from the world of innovation',
+    newsReadMore: 'Read →', newsBack: '← Back', newsAllBtn: 'All news',
+
+    partnersEyebrow: 'Partners', partnersTitle: 'Building the ecosystem together',
+    partnersSub: 'Azerbaijan\'s leading companies, international organizations and universities',
+    partnersCtaTitle: 'Become a Partner',
+    partnersCtaDesc: 'Would you like to see your company among the partners of ATU Innovation Center?',
+    partnersCtaBtn: 'Contact Us →',
+
+    applyEyebrow: 'Apply', applyTitle: 'Grow with us',
+    applySub: 'Join as a volunteer or add your startup to the incubation program',
+    tabVolunteer: '🙋 Volunteer Registration', tabStartup: '🚀 Startup Application',
+    volTitle: 'Volunteer Registration', volSub: 'Fill out the form below to join the Innovation Center as a volunteer.',
+    lName: 'First Name *', lSurname: 'Last Name *', lEmail: 'Email *', lPhone: 'Phone *',
+    lMajor: 'Major *', lYear: 'Year *', lInterest: 'Area of Interest *',
+    lExperience: 'Your Experience', lCV: 'Upload CV',
+    pName: 'Your name', pSurname: 'Your surname', pEmail: 'email@atu.edu.az', pPhone: '+994 50 XXX XX XX',
+    selPlaceholder: 'Select...',
+    majors: ['Computer Engineering','Information Technology','Cybersecurity','Software Engineering','Electronics Engineering','Economics','Management','Other'],
+    years: ['1st year','2nd year','3rd year','4th year','Master'],
+    interests: ['Frontend Development','Backend Development','Graphic Design','Artificial Intelligence','Cybersecurity','Robotics','Marketing','Project Management'],
+    expPlaceholder: 'Previous projects, certificates, activities...',
+    volSubmit: 'Register →',
+    volSuccessTitle: '✓ Application received!', volSuccessDesc: 'We will contact you soon. Please check your email.',
+
+    contactEyebrow: 'Contact', contactTitle: 'Get in touch',
+    contactSub: 'Write to us for questions, suggestions or collaboration',
+    contactInfo: 'Contact Information', contactForm: 'Send Message',
+    lCName: 'Your Name *', lCEmail: 'Email *', lCSubject: 'Subject *', lCMessage: 'Your Message *',
+    pCName: 'Your name', pCEmail: 'email@domain.com', pCSubject: 'Write subject...', pCMessage: 'Write your message...',
+    contactSendBtn: 'Send →',
+    contactSuccessTitle: '✓ Message sent!', contactSuccessDesc: 'We will contact you soon.',
+
+    adminTitle: 'Admin Panel', adminWelcome: 'Welcome, Admin',
+    adminDashboard: '📊 Dashboard', adminAddEvent: '📅 Add Event',
+    adminAddProgram: '📚 Add Program', adminAddStartup: '🚀 Add Startup',
+    adminVolunteers: '👥 Volunteers', adminStartupApps: '📋 Startup Applications',
+    adminLogout: 'Logout',
+
+    alertFillAll: 'Please fill in all required fields.',
+    alertProjectName: 'Project name is required.',
+    alertFillContact: 'Please fill in all fields.',
+  },
+
+  ru: {
+    navHome: 'Главная', navStartups: 'Стартапы', navMentors: 'Менторы',
+    navPrograms: 'Программы', navEvents: 'Мероприятия', navNews: 'Новости',
+    navPartners: 'Партнёры', navContact: 'Контакты',
+    navApply: 'Подать заявку', navAdmin: 'Админ', navBrand: 'ATU Инновации',
+    navSubtitle: 'Азербайджанский Технологический Университет',
+
+    heroTitle: 'Инновационный центр ATU',
+    heroDesc: ' — от стартапа до ментора, от инкубации до сертифицированных программ — полная цифровая экосистема.',
+    heroCta1: 'Подать заявку →', heroCta2: 'Посмотреть программы',
+
+    aboutEyebrow: 'О нас', aboutTitle: 'Что такое Инновационный центр?',
+    aboutDesc: 'В соответствии с целями университета и требованиями стратегического развития обеспечивает планирование инновационной стратегии. Организация инновационной среды: помощь в формировании инновационной культуры путём организации мероприятий, семинаров и тренингов, поощряющих инновационное мышление.',
+    feat1Title: 'Программа инкубации', feat1Desc: '6-месячная ускоренная поддержка инкубации для стартапов',
+    feat2Title: 'Бесплатные тренинги', feat2Desc: 'Профессиональная учебная программа по 6 направлениям с сертификатом',
+    feat3Title: 'Сеть менторов', feat3Desc: 'Прямая поддержка и руководство от 45+ лидеров отрасли',
+    stat1: 'Технических программ', stat2: 'Активных клубов', stat3: 'Международных наград', stat4: 'Международных партнёров',
+
+    startupEyebrow: 'Экосистема стартапов', startupTitle: 'Избранные проекты', viewAll: 'Смотреть все →',
+    eventsEyebrow: 'Мероприятия', eventsTitle: 'Предстоящие события',
+    ctaTitle: 'Бесплатные учебные программы',
+    ctaDesc: 'От графического дизайна до искусственного интеллекта — 6 направлений, абсолютно бесплатно, с сертификатом.',
+    ctaBtn1: 'Посмотреть программы', ctaBtn2: 'Подать заявку',
+    newsEyebrow: 'Новости', newsTitle: 'Последние новости',
+
+    footerBrand: 'Инновационный центр ATU',
+    footerDesc: 'Инновационная и предпринимательская экосистема Азербайджанского технологического университета. Мы делаем технологии для людей.',
+    footerCol1: 'Платформа', footerCol2: 'Информация', footerCol3: 'Контакты',
+    footerCopy: '© 2026 Инновационный центр ATU. Все права защищены.',
+    footerHours: 'Пн — Пт, 09:00–18:00',
+
+    startupsEyebrow: 'Экосистема', startupsPageTitle: 'Экосистема стартапов',
+    startupsPageSub: 'Все инновационные проекты нашего центра',
+    startupSearch: 'Поиск стартапа...',
+    filterAll: 'Все', filterIdea: 'Идея', filterMvp: 'MVP', filterReady: 'Готово',
+    stageIdea: 'Идея', stageMvp: 'MVP', stageReady: 'Готов',
+    noResults: 'Результатов не найдено.',
+
+    mentorsEyebrow: 'Сеть менторов', mentorsTitle: 'Лидеры отрасли',
+    mentorsSub: 'Прямая связь с ведущими технологами и предпринимателями Азербайджана',
+    mentorSearch: 'Поиск ментора, специальности, компании...',
+    mentorLinkedIn: 'LinkedIn', mentorProfile: 'Профиль →',
+
+    programsEyebrow: 'Бесплатные программы', programsTitle: 'Профессиональные учебные программы',
+    programsSub: 'Сертифицированные, с менторами, на основе реальных проектов — абсолютно бесплатно.',
+    req1Title: 'Требования к участию', req1i1: 'Быть студентом ATU', req1i2: 'Минимум 1 курс', req1i3: 'Средний балл ≥ 60', req1i4: 'Пройти собеседование',
+    req2Title: 'Кто может участвовать', req2i1: 'Студенты всех специальностей', req2i2: 'Студенты магистратуры', req2i3: 'Выпускники ATU (1 год)', req2i4: 'Студенты вузов-партнёров',
+    req3Title: 'Основные возможности', req3i1: 'Официальный сертификат', req3i2: 'Поддержка ментора', req3i3: 'Опыт реальных проектов', req3i4: 'Сеть трудоустройства',
+    tabPrograms: '📚 Программы', tabClubs: '🌱 Клубы',
+    programBtn: 'Зарегистрироваться →',
+
+    eventsPageEyebrow: 'Календарь мероприятий', eventsPageTitle: 'Семинары, Воркшопы, Хакатоны',
+    eventsPageSub: 'Расширяйте знания и создавайте связи, участвуя в живых мероприятиях.',
+    filterSeminar: 'Семинар', filterWorkshop: 'Воркшоп', filterHackathon: 'Хакатон',
+    catSeminar: 'Семинар', catWorkshop: 'Воркшоп', catHackathon: 'Хакатон',
+    moreDetail: 'Подробнее →', backLink: '← Назад',
+    eventRegBtn: '🚀 Зарегистрироваться', eventAllBtn: 'Все мероприятия',
+
+    newsPageEyebrow: 'Новости', newsPageTitle: 'Новости и статьи',
+    newsPageSub: 'Последние обновления из мира инноваций',
+    newsReadMore: 'Читать →', newsBack: '← Назад', newsAllBtn: 'Все новости',
+
+    partnersEyebrow: 'Партнёры', partnersTitle: 'Строим экосистему вместе',
+    partnersSub: 'Ведущие компании Азербайджана, международные организации и университеты',
+    partnersCtaTitle: 'Стать партнёром',
+    partnersCtaDesc: 'Хотите увидеть название своей компании среди партнёров Инновационного центра ATU?',
+    partnersCtaBtn: 'Связаться с нами →',
+
+    applyEyebrow: 'Заявка', applyTitle: 'Развивайтесь вместе с нами',
+    applySub: 'Присоединяйтесь как волонтёр или добавьте свой стартап в программу инкубации',
+    tabVolunteer: '🙋 Регистрация волонтёра', tabStartup: '🚀 Заявка стартапа',
+    volTitle: 'Регистрация волонтёра', volSub: 'Заполните форму ниже, чтобы присоединиться к Инновационному центру в качестве волонтёра.',
+    lName: 'Имя *', lSurname: 'Фамилия *', lEmail: 'Email *', lPhone: 'Телефон *',
+    lMajor: 'Специальность *', lYear: 'Курс *', lInterest: 'Область интересов *',
+    lExperience: 'Ваш опыт', lCV: 'Загрузить резюме',
+    pName: 'Ваше имя', pSurname: 'Ваша фамилия', pEmail: 'email@atu.edu.az', pPhone: '+994 50 XXX XX XX',
+    selPlaceholder: 'Выберите...',
+    majors: ['Компьютерная инженерия','Информационные технологии','Кибербезопасность','Программная инженерия','Электронная инженерия','Экономика','Менеджмент','Другое'],
+    years: ['1 курс','2 курс','3 курс','4 курс','Магистратура'],
+    interests: ['Frontend Development','Backend Development','Графический дизайн','Искусственный интеллект','Кибербезопасность','Робототехника','Маркетинг','Управление проектами'],
+    expPlaceholder: 'Предыдущие проекты, сертификаты, деятельность...',
+    volSubmit: 'Зарегистрироваться →',
+    volSuccessTitle: '✓ Заявка принята!', volSuccessDesc: 'Мы свяжемся с вами в ближайшее время. Проверьте email.',
+
+    contactEyebrow: 'Контакты', contactTitle: 'Свяжитесь с нами',
+    contactSub: 'Напишите нам для вопросов, предложений или сотрудничества',
+    contactInfo: 'Контактная информация', contactForm: 'Отправить сообщение',
+    lCName: 'Ваше имя *', lCEmail: 'Email *', lCSubject: 'Тема *', lCMessage: 'Ваше сообщение *',
+    pCName: 'Ваше имя', pCEmail: 'email@domain.com', pCSubject: 'Напишите тему...', pCMessage: 'Напишите ваше сообщение...',
+    contactSendBtn: 'Отправить →',
+    contactSuccessTitle: '✓ Сообщение отправлено!', contactSuccessDesc: 'Мы свяжемся с вами в ближайшее время.',
+
+    adminTitle: 'Панель администратора', adminWelcome: 'Добро пожаловать, Администратор',
+    adminDashboard: '📊 Панель', adminAddEvent: '📅 Добавить мероприятие',
+    adminAddProgram: '📚 Добавить программу', adminAddStartup: '🚀 Добавить стартап',
+    adminVolunteers: '👥 Волонтёры', adminStartupApps: '📋 Заявки стартапов',
+    adminLogout: 'Выход',
+
+    alertFillAll: 'Пожалуйста, заполните все обязательные поля.',
+    alertProjectName: 'Название проекта обязательно.',
+    alertFillContact: 'Пожалуйста, заполните все поля.',
+  }
+};
+
+let currentLang = 'az';
+
+function t(key) {
+  return (translations[currentLang] && translations[currentLang][key]) || translations['az'][key] || key;
+}
+
+function applyTranslations() {
+  const lang = currentLang;
+  document.documentElement.lang = lang;
+
+  // Navbar
+  document.querySelector('.nav-wordmark').innerHTML = t('navBrand') + '<span>' + t('navSubtitle') + '</span>';
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navKeys = ['navHome','navStartups','navMentors','navPrograms','navEvents','navNews','navPartners','navContact'];
+  navLinks.forEach((el, i) => { if (navKeys[i]) el.textContent = t(navKeys[i]); });
+  const navBtns = document.querySelectorAll('.btn-nav-primary');
+  if (navBtns[0]) navBtns[0].textContent = t('navApply');
+  if (navBtns[1]) navBtns[1].textContent = t('navAdmin');
+
+  // Hero
+  const heroH1 = document.querySelector('.hero-content h1');
+  if (heroH1) heroH1.textContent = t('heroTitle');
+  const heroDesc = document.querySelector('.hero-desc');
+  if (heroDesc) heroDesc.textContent = t('heroDesc');
+  const heroBtns = document.querySelectorAll('.hero-cta .btn');
+  if (heroBtns[0]) heroBtns[0].textContent = t('heroCta1');
+  if (heroBtns[1]) heroBtns[1].textContent = t('heroCta2');
+
+  // About section
+  const eyebrows = document.querySelectorAll('#page-home .section-eyebrow');
+  if (eyebrows[0]) eyebrows[0].textContent = t('aboutEyebrow');
+  const aboutTitle = document.querySelector('#page-home .about-text .section-title');
+  if (aboutTitle) aboutTitle.textContent = t('aboutTitle');
+  const aboutDesc = document.querySelector('#page-home .about-text .section-sub');
+  if (aboutDesc) aboutDesc.textContent = t('aboutDesc');
+
+  const afTitles = document.querySelectorAll('.af-title');
+  const afDescs = document.querySelectorAll('.af-desc');
+  const featKeys = [['feat1Title','feat1Desc'],['feat2Title','feat2Desc'],['feat3Title','feat3Desc']];
+  featKeys.forEach(([tk, dk], i) => {
+    if (afTitles[i]) afTitles[i].textContent = t(tk);
+    if (afDescs[i]) afDescs[i].textContent = t(dk);
+  });
+
+  const statLabels = document.querySelectorAll('.av-stat-label');
+  const statKeys = ['stat1','stat2','stat3','stat4'];
+  statLabels.forEach((el, i) => { if (statKeys[i]) el.textContent = t(statKeys[i]); });
+
+  // Home sections eyebrows & titles
+  if (eyebrows[1]) eyebrows[1].textContent = t('startupEyebrow');
+  const homeSections = document.querySelectorAll('#page-home .section-title');
+  if (homeSections[1]) homeSections[1].textContent = t('startupTitle');
+  const homeViewAllBtns = document.querySelectorAll('#page-home .btn-outline.btn-sm');
+  if (homeViewAllBtns[0]) homeViewAllBtns[0].textContent = t('viewAll');
+
+  if (eyebrows[2]) eyebrows[2].textContent = t('eventsEyebrow');
+  if (homeSections[2]) homeSections[2].textContent = t('eventsTitle');
+  if (homeViewAllBtns[1]) homeViewAllBtns[1].textContent = t('viewAll');
+
+  // CTA banner
+  const ctaTitle = document.querySelector('.cta-banner h2');
+  if (ctaTitle) ctaTitle.textContent = t('ctaTitle');
+  const ctaDesc = document.querySelector('.cta-banner p');
+  if (ctaDesc) ctaDesc.textContent = t('ctaDesc');
+  const ctaBtns = document.querySelectorAll('.cta-actions .btn');
+  if (ctaBtns[0]) ctaBtns[0].textContent = t('ctaBtn1');
+  if (ctaBtns[1]) ctaBtns[1].textContent = t('ctaBtn2');
+
+  if (eyebrows[3]) eyebrows[3].textContent = t('newsEyebrow');
+  if (homeSections[3]) homeSections[3].textContent = t('newsTitle');
+  if (homeViewAllBtns[2]) homeViewAllBtns[2].textContent = t('viewAll');
+
+  // Footer
+  const fBrand = document.querySelector('.footer-brand-name');
+  if (fBrand) fBrand.textContent = t('footerBrand');
+  const fDesc = document.querySelector('.footer-brand-desc');
+  if (fDesc) fDesc.textContent = t('footerDesc');
+  const fColTitles = document.querySelectorAll('.footer-col-title');
+  if (fColTitles[0]) fColTitles[0].textContent = t('footerCol1');
+  if (fColTitles[1]) fColTitles[1].textContent = t('footerCol2');
+  if (fColTitles[2]) fColTitles[2].textContent = t('footerCol3');
+  const fCopy = document.querySelector('.footer-bottom span');
+  if (fCopy) fCopy.textContent = t('footerCopy');
+  const footerLinks = document.querySelectorAll('.footer-col ul li a');
+  const footerLinkKeys = ['navStartups','navMentors','navPrograms','navEvents','navNews','navPartners','navApply','navContact'];
+  footerLinks.forEach((el, i) => { if (footerLinkKeys[i]) el.textContent = t(footerLinkKeys[i]); });
+  // Footer hours
+  const footerUls = document.querySelectorAll('.footer-col ul');
+  if (footerUls[2]) {
+    const lis = footerUls[2].querySelectorAll('li a');
+    if (lis[3]) lis[3].textContent = t('footerHours');
+  }
+
+  // Startups page
+  const spEyebrow = document.querySelector('#page-startups .section-eyebrow');
+  if (spEyebrow) spEyebrow.textContent = t('startupsEyebrow');
+  const spTitle = document.querySelector('#page-startups .section-title');
+  if (spTitle) spTitle.textContent = t('startupsPageTitle');
+  const spSub = document.querySelector('#page-startups .section-sub');
+  if (spSub) spSub.textContent = t('startupsPageSub');
+  const spSearch = document.getElementById('startup-search');
+  if (spSearch) spSearch.placeholder = t('startupSearch');
+  const spFilters = document.querySelectorAll('#page-startups .filter-btn');
+  const spFilterKeys = ['filterAll','filterIdea','filterMvp','filterReady'];
+  spFilters.forEach((el, i) => { if (spFilterKeys[i]) el.textContent = t(spFilterKeys[i]); });
+
+  // Mentors page
+  const mpEyebrow = document.querySelector('#page-mentors .section-eyebrow');
+  if (mpEyebrow) mpEyebrow.textContent = t('mentorsEyebrow');
+  const mpTitle = document.querySelector('#page-mentors .section-title');
+  if (mpTitle) mpTitle.textContent = t('mentorsTitle');
+  const mpSub = document.querySelector('#page-mentors .section-sub');
+  if (mpSub) mpSub.textContent = t('mentorsSub');
+  const mpSearch = document.getElementById('mentor-search');
+  if (mpSearch) mpSearch.placeholder = t('mentorSearch');
+
+  // Programs page
+  const ppEyebrow = document.querySelector('#page-programs .section-eyebrow');
+  if (ppEyebrow) ppEyebrow.textContent = t('programsEyebrow');
+  const ppTitle = document.querySelector('#page-programs .section-title');
+  if (ppTitle) ppTitle.textContent = t('programsTitle');
+  const ppSub = document.querySelector('#page-programs .section-sub');
+  if (ppSub) ppSub.textContent = t('programsSub');
+
+  // Requirements cards
+  const reqCards = document.querySelectorAll('#page-programs .card[style*="border-left"]');
+  const reqData = [
+    { title: 'req1Title', items: ['req1i1','req1i2','req1i3','req1i4'] },
+    { title: 'req2Title', items: ['req2i1','req2i2','req2i3','req2i4'] },
+    { title: 'req3Title', items: ['req3i1','req3i2','req3i3','req3i4'] },
+  ];
+  reqCards.forEach((card, ci) => {
+    const titleEl = card.querySelector('div[style*="font-weight:700"]');
+    if (titleEl) titleEl.textContent = t(reqData[ci].title);
+    const items = card.querySelectorAll('li');
+    items.forEach((li, ii) => { li.textContent = t(reqData[ci].items[ii]); });
+  });
+
+  const tabBtns = document.querySelectorAll('#page-programs .tab-btn');
+  if (tabBtns[0]) tabBtns[0].textContent = t('tabPrograms');
+  if (tabBtns[1]) tabBtns[1].textContent = t('tabClubs');
+
+  // Events page
+  const epEyebrow = document.querySelector('#page-events .section-eyebrow');
+  if (epEyebrow) epEyebrow.textContent = t('eventsPageEyebrow');
+  const epTitle = document.querySelector('#page-events .section-title');
+  if (epTitle) epTitle.textContent = t('eventsPageTitle');
+  const epSub = document.querySelector('#page-events .section-sub');
+  if (epSub) epSub.textContent = t('eventsPageSub');
+  const epFilters = document.querySelectorAll('#page-events .filter-btn');
+  const epFilterKeys = ['filterAll','filterSeminar','filterWorkshop','filterHackathon'];
+  epFilters.forEach((el, i) => { if (epFilterKeys[i]) el.textContent = t(epFilterKeys[i]); });
+
+  // News page
+  const npEyebrow = document.querySelector('#page-news .section-eyebrow');
+  if (npEyebrow) npEyebrow.textContent = t('newsPageEyebrow');
+  const npTitle = document.querySelector('#page-news .section-title');
+  if (npTitle) npTitle.textContent = t('newsPageTitle');
+  const npSub = document.querySelector('#page-news .section-sub');
+  if (npSub) npSub.textContent = t('newsPageSub');
+
+  // Partners page
+  const parEyebrow = document.querySelector('#page-partners .section-eyebrow');
+  if (parEyebrow) parEyebrow.textContent = t('partnersEyebrow');
+  const parTitle = document.querySelector('#page-partners .section-title');
+  if (parTitle) parTitle.textContent = t('partnersTitle');
+  const parSub = document.querySelector('#page-partners .section-sub');
+  if (parSub) parSub.textContent = t('partnersSub');
+  const parCtaTitle = document.querySelector('#page-partners .cta-banner h2');
+  if (parCtaTitle) parCtaTitle.textContent = t('partnersCtaTitle');
+  const parCtaDesc = document.querySelector('#page-partners .cta-banner p');
+  if (parCtaDesc) parCtaDesc.textContent = t('partnersCtaDesc');
+  const parCtaBtn = document.querySelector('#page-partners .cta-actions .btn');
+  if (parCtaBtn) parCtaBtn.textContent = t('partnersCtaBtn');
+
+  // Apply page
+  const apEyebrow = document.querySelector('#page-apply .section-eyebrow');
+  if (apEyebrow) apEyebrow.textContent = t('applyEyebrow');
+  const apTitle = document.querySelector('#page-apply .section-title');
+  if (apTitle) apTitle.textContent = t('applyTitle');
+  const apSub = document.querySelector('#page-apply .section-sub');
+  if (apSub) apSub.textContent = t('applySub');
+  const apFormTabs = document.querySelectorAll('#page-apply .form-tab');
+  if (apFormTabs[0]) apFormTabs[0].textContent = t('tabVolunteer');
+  if (apFormTabs[1]) apFormTabs[1].textContent = t('tabStartup');
+  const apVolTitle = document.querySelector('#apply-volunteer .form-title');
+  if (apVolTitle) apVolTitle.textContent = t('volTitle');
+  const apVolSub = document.querySelector('#apply-volunteer .form-subtitle');
+  if (apVolSub) apVolSub.textContent = t('volSub');
+
+  // Volunteer form labels & placeholders
+  const volLabels = document.querySelectorAll('#apply-volunteer label');
+  const volLabelKeys = ['lName','lSurname','lEmail','lPhone','lMajor','lYear','lInterest','lExperience','lCV'];
+  volLabels.forEach((el, i) => { if (volLabelKeys[i]) el.textContent = t(volLabelKeys[i]); });
+  const vName = document.getElementById('v-name'); if (vName) vName.placeholder = t('pName');
+  const vSurname = document.getElementById('v-surname'); if (vSurname) vSurname.placeholder = t('pSurname');
+  const vEmail = document.getElementById('v-email'); if (vEmail) vEmail.placeholder = t('pEmail');
+  const vPhone = document.getElementById('v-phone'); if (vPhone) vPhone.placeholder = t('pPhone');
+  const vExperience = document.getElementById('v-experience'); if (vExperience) vExperience.placeholder = t('expPlaceholder');
+
+  // Update select options
+  const vMajor = document.getElementById('v-major');
+  if (vMajor) {
+    const majors = t('majors');
+    Array.from(vMajor.options).forEach((opt, i) => {
+      if (i === 0) opt.textContent = t('selPlaceholder');
+      else if (majors[i-1]) opt.textContent = majors[i-1];
+    });
+  }
+  const vYear = document.getElementById('v-year');
+  if (vYear) {
+    const years = t('years');
+    Array.from(vYear.options).forEach((opt, i) => {
+      if (i === 0) opt.textContent = t('selPlaceholder');
+      else if (years[i-1]) opt.textContent = years[i-1];
+    });
+  }
+  const vInterest = document.getElementById('v-interest');
+  if (vInterest) {
+    const interests = t('interests');
+    Array.from(vInterest.options).forEach((opt, i) => {
+      if (i === 0) opt.textContent = t('selPlaceholder');
+      else if (interests[i-1]) opt.textContent = interests[i-1];
+    });
+  }
+
+  const volSubmitBtn = document.querySelector('#apply-volunteer .btn-secondary');
+  if (volSubmitBtn) volSubmitBtn.textContent = t('volSubmit');
+  const volSuccEl = document.getElementById('volunteer-success');
+  if (volSuccEl) volSuccEl.innerHTML = `<h3>${t('volSuccessTitle')}</h3><p>${t('volSuccessDesc')}</p>`;
+
+  // Contact page
+  const cpEyebrow = document.querySelector('#page-contact .section-eyebrow');
+  if (cpEyebrow) cpEyebrow.textContent = t('contactEyebrow');
+  const cpTitle = document.querySelector('#page-contact .section-title');
+  if (cpTitle) cpTitle.textContent = t('contactTitle');
+  const cpSub = document.querySelector('#page-contact .section-sub');
+  if (cpSub) cpSub.textContent = t('contactSub');
+  const cpInfoTitle = document.querySelector('.contact-info-title');
+  if (cpInfoTitle) cpInfoTitle.textContent = t('contactInfo');
+  const cpFormTitle = document.querySelector('.contact-form-title');
+  if (cpFormTitle) cpFormTitle.textContent = t('contactForm');
+  const contactLabels = document.querySelectorAll('#page-contact .form-group label');
+  const contactLabelKeys = ['lCName','lCEmail','lCSubject','lCMessage'];
+  contactLabels.forEach((el, i) => { if (contactLabelKeys[i]) el.textContent = t(contactLabelKeys[i]); });
+  const cName = document.getElementById('c-name'); if (cName) cName.placeholder = t('pCName');
+  const cEmail = document.getElementById('c-email'); if (cEmail) cEmail.placeholder = t('pCEmail');
+  const cSubject = document.getElementById('c-subject'); if (cSubject) cSubject.placeholder = t('pCSubject');
+  const cMessage = document.getElementById('c-message'); if (cMessage) cMessage.placeholder = t('pCMessage');
+  const cSendBtn = document.querySelector('#page-contact .btn-secondary');
+  if (cSendBtn) cSendBtn.textContent = t('contactSendBtn');
+  const contactSuccEl = document.getElementById('contact-success');
+  if (contactSuccEl) contactSuccEl.innerHTML = `<h3>${t('contactSuccessTitle')}</h3><p>${t('contactSuccessDesc')}</p>`;
+
+  // Re-render dynamic content with new language labels
+  const activePage = document.querySelector('.page.active');
+  if (activePage) {
+    const pageId = activePage.id.replace('page-', '');
+    const renders = {
+      home: () => { renderHomeStartups(); renderHomeEvents(); renderHomeNews(); },
+      startups: renderStartups,
+      mentors: () => renderMentors(),
+      programs: () => { renderPrograms(); renderClubs(); },
+      events: renderEvents,
+      news: renderNews,
+      partners: renderPartners,
+    };
+    if (renders[pageId]) renders[pageId]();
+  }
+}
+
+function setLang(lang, btn) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentLang = lang;
+  applyTranslations();
+}
+
+// ═══════════════════════════════════
+//  TABS
+// ═══════════════════════════════════
+function switchTab(container, panelId, btn) {
+  const tabBtns = btn.parentElement.querySelectorAll('.tab-btn');
+  tabBtns.forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const panels = document.querySelectorAll(`#${container} .tab-panel`);
+  panels.forEach(p => p.classList.remove('active'));
+  document.getElementById(panelId)?.classList.add('active');
+}
+
+// ═══════════════════════════════════
+//  APPLY FORMS
+// ═══════════════════════════════════
+function switchApplyTab(tab, el) {
+  document.querySelectorAll('.form-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.form-section').forEach(s => s.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('apply-' + tab)?.classList.add('active');
+}
+
+function submitVolunteer() {
+  const name = document.getElementById('v-name').value;
+  const email = document.getElementById('v-email').value;
+  const phone = document.getElementById('v-phone').value;
+  const major = document.getElementById('v-major').value;
+  const year = document.getElementById('v-year').value;
+  const interest = document.getElementById('v-interest').value;
+  if (!name || !email || !phone || !major || !year || !interest) { alert(t('alertFillAll')); return; }
+  const data = { name: name + ' ' + document.getElementById('v-surname').value, email, phone, major, year, interest, experience: document.getElementById('v-experience').value, date: new Date().toLocaleDateString('az') };
+  const ex = JSON.parse(localStorage.getItem('volunteer_apps') || '[]');
+  ex.push(data); localStorage.setItem('volunteer_apps', JSON.stringify(ex));
+  document.getElementById('volunteer-success').classList.add('show');
+}
+
+let curStep = 1;
+function stepNext(step) {
+  document.querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('step-' + step)?.classList.add('active');
+  curStep = step;
+  for (let i = 1; i <= 6; i++) {
+    const d = document.getElementById('dot-' + i);
+    if (d) d.className = 'step-dot' + (i <= step ? ' done' : '');
+  }
+  if (step === 6) buildReview();
+}
+function buildReview() {
+  const name = document.getElementById('s-name')?.value || '—';
+  const idea = document.getElementById('s-idea')?.value || '—';
+  const tc = document.getElementById('s-team-count')?.value || '—';
+  const members = document.getElementById('s-team-members')?.value || '—';
+  const stage = document.querySelector('input[name="stage"]:checked')?.value || '—';
+  const sl = {idea:'İdeya',mvp:'MVP',customers:'İlk müştərilər',sales:'Satış'};
+  document.getElementById('startup-review').innerHTML = `
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.25rem">
+      <div><b style="color:#0f172a">Layihə adı:</b> ${name}</div>
+      <div><b style="color:#0f172a">Mərhələ:</b> ${sl[stage]||stage}</div>
+      <div><b style="color:#0f172a">Biznes ideyası:</b> ${idea.slice(0,150)}${idea.length>150?'...':''}</div>
+      <div><b style="color:#0f172a">Komanda sayı:</b> ${tc}</div>
+      <div><b style="color:#0f172a">Üzvlər:</b> ${members.slice(0,100)}${members.length>100?'...':''}</div>
+    </div>`;
+}
+function submitStartup() {
+  const name = document.getElementById('s-name')?.value;
+  if (!name) { alert(t('alertProjectName')); stepNext(1); return; }
+  const data = { name, idea: document.getElementById('s-idea')?.value, stage: document.querySelector('input[name="stage"]:checked')?.value, teamCount: document.getElementById('s-team-count')?.value, members: document.getElementById('s-team-members')?.value, expectations: document.getElementById('s-expectations')?.value, goals: document.getElementById('s-goals')?.value, date: new Date().toLocaleDateString('az') };
+  const ex = JSON.parse(localStorage.getItem('startup_apps') || '[]');
+  ex.push(data); localStorage.setItem('startup_apps', JSON.stringify(ex));
+  document.getElementById('startup-success').classList.add('show');
+}
+function submitContact() {
+  const name = document.getElementById('c-name').value;
+  const email = document.getElementById('c-email').value;
+  const subject = document.getElementById('c-subject').value;
+  const message = document.getElementById('c-message').value;
+  if (!name || !email || !subject || !message) { alert(t('alertFillContact')); return; }
+  document.getElementById('contact-success').classList.add('show');
+  ['c-name','c-email','c-subject','c-message'].forEach(id => document.getElementById(id).value = '');
+}
+
+// ═══════════════════════════════════
+//  ADMIN
+// ═══════════════════════════════════
+function showAdminPanel(panel, el) {
+  document.querySelectorAll('.admin-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.admin-nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('admin-' + panel)?.classList.add('active');
+  if (el) el.classList.add('active');
+  const r = { dashboard:renderAdminDashboard, 'add-event':renderAdminEventList, 'add-program':renderAdminProgramList, 'add-startup':renderAdminStartupList, volunteers:renderAdminVolunteers, 'startup-apps':renderAdminStartupApps, 'volunteer-hub': () => {} };
+  if (r[panel]) r[panel]();
+}
+function renderAdmin() { renderAdminDashboard(); }
+function renderAdminDashboard() {
+  const vols = JSON.parse(localStorage.getItem('volunteer_apps') || '[]');
+  const sApps = JSON.parse(localStorage.getItem('startup_apps') || '[]');
+  const cEvts = JSON.parse(localStorage.getItem('custom_events') || '[]');
+  const cSt = JSON.parse(localStorage.getItem('custom_startups') || '[]');
+  const sg = document.getElementById('admin-stats');
+  if (sg) sg.innerHTML = [
+    ['Könüllü müraciəti', vols.length],
+    ['Startap müraciəti', sApps.length],
+    ['Cəmi tədbirlər', events.length + cEvts.length],
+    ['Cəmi startaplar', startups.length + cSt.length],
+  ].map(([l,n]) => `<div class="admin-stat-card"><div class="admin-stat-label">${l}</div><div class="admin-stat-num">${n}</div></div>`).join('');
+  const rr = document.getElementById('admin-recent');
+  if (rr) {
+    const all = [...vols.slice(-3).map(v=>({type:'Könüllü',name:v.name,date:v.date,detail:v.email})), ...sApps.slice(-3).map(s=>({type:'Startap',name:s.name,date:s.date,detail:s.stage||''}))].slice(0,6);
+    rr.innerHTML = all.length ? `<table class="admin-table"><thead><tr><th>Növ</th><th>Ad</th><th>Ətraflı</th><th>Tarix</th></tr></thead><tbody>${all.map(a=>`<tr><td><span style="padding:2px 8px;border-radius:4px;font-size:.72rem;background:#dbeafe;color:#2563eb">${a.type}</span></td><td>${a.name}</td><td style="color:#94a3b8">${a.detail}</td><td>${a.date}</td></tr>`).join('')}</tbody></table>` : '<p style="color:#94a3b8">Hələ müraciət yoxdur.</p>';
+  }
+}
+function renderAdminEventList() {
+  const tbody = document.getElementById('admin-events-list');
+  if (!tbody) return;
+  tbody.innerHTML = getAllEvents().map((e,i) => `<tr><td>${e.title}</td><td>${e.cat}</td><td>${e.date}</td><td>${i>=events.length?`<button onclick="deleteCustomEvent(${i-events.length})" style="background:#fee2e2;border:1px solid #fca5a5;color:#991b1b;border-radius:5px;padding:3px 10px;font-size:.75rem;cursor:pointer">Sil</button>`:'<span style="font-size:.75rem;color:#94a3b8">Standart</span>'}</td></tr>`).join('');
+}
+function deleteCustomEvent(idx) {
+  const saved = JSON.parse(localStorage.getItem('custom_events') || '[]');
+  saved.splice(idx, 1); localStorage.setItem('custom_events', JSON.stringify(saved)); renderAdminEventList();
+}
+function renderAdminProgramList() {
+  const tbody = document.getElementById('admin-programs-list');
+  if (!tbody) return;
+  tbody.innerHTML = getAllPrograms().map((p,i) => `<tr><td>${p.title}</td><td>${p.duration}</td><td>${p.level}</td><td><span style="font-size:.75rem;color:#94a3b8">${i<programs.length?'Standart':'Əlavə edilmiş'}</span></td></tr>`).join('');
+}
+function renderAdminStartupList() {
+  const tbody = document.getElementById('admin-startups-list');
+  if (!tbody) return;
+  tbody.innerHTML = getAllStartups().map(s => `<tr><td>${s.name}</td><td>${s.stage}</td><td>${s.team}</td><td>${s.category||'—'}</td></tr>`).join('');
+}
+function renderAdminVolunteers() {
+  const v = JSON.parse(localStorage.getItem('volunteer_apps') || '[]');
+  const c = document.getElementById('volunteer-count');
+  if (c) c.textContent = `Cəmi ${v.length} könüllü müraciəti`;
+  const tbody = document.getElementById('admin-volunteers-list');
+  if (tbody) tbody.innerHTML = v.length ? v.map(x => `<tr><td>${x.name}</td><td>${x.email}</td><td>${x.phone}</td><td>${x.major}</td><td>${x.year}</td><td>${x.interest}</td><td>${x.date}</td></tr>`).join('') : '<tr><td colspan="7" style="text-align:center;color:#94a3b8;padding:2rem">Hələ müraciət yoxdur</td></tr>';
+}
+function renderAdminStartupApps() {
+  const a = JSON.parse(localStorage.getItem('startup_apps') || '[]');
+  const c = document.getElementById('startup-apps-count');
+  if (c) c.textContent = `Cəmi ${a.length} startap müraciəti`;
+  const tbody = document.getElementById('admin-startup-apps-list');
+  if (tbody) tbody.innerHTML = a.length ? a.map(x => `<tr><td>${x.name}</td><td>${x.stage||'—'}</td><td>${x.teamCount||'—'}</td><td style="max-width:200px">${(x.expectations||'').slice(0,80)}${(x.expectations||'').length>80?'...':''}</td><td>${x.date}</td></tr>`).join('') : '<tr><td colspan="5" style="text-align:center;color:#94a3b8;padding:2rem">Hələ müraciət yoxdur</td></tr>';
+}
+
+function adminAddEvent() {
+  const title = document.getElementById('ae-title').value;
+  const desc = document.getElementById('ae-desc').value;
+  if (!title || !desc) { alert('Başlıq və təsvir məcburidir.'); return; }
+  const saved = JSON.parse(localStorage.getItem('custom_events') || '[]');
+  saved.push({ id:'c'+Date.now(), title, cat:document.getElementById('ae-cat').value, date:document.getElementById('ae-date').value||new Date().toLocaleDateString('az'), emoji:document.getElementById('ae-emoji').value||'🎯', desc, detail:document.getElementById('ae-detail').value });
+  localStorage.setItem('custom_events', JSON.stringify(saved));
+  document.getElementById('ae-title').value=''; document.getElementById('ae-desc').value=''; document.getElementById('ae-detail').value='';
+  const s = document.getElementById('ae-success'); s.classList.add('show'); setTimeout(()=>s.classList.remove('show'),3000);
+  renderAdminEventList();
+}
+function adminAddProgram() {
+  const title = document.getElementById('ap-title').value;
+  const desc = document.getElementById('ap-desc').value;
+  if (!title || !desc) { alert('Ad və təsvir məcburidir.'); return; }
+  const saved = JSON.parse(localStorage.getItem('custom_programs') || '[]');
+  saved.push({ title, icon:document.getElementById('ap-emoji').value||'💻', duration:document.getElementById('ap-duration').value||'3 ay', level:document.getElementById('ap-level').value, desc });
+  localStorage.setItem('custom_programs', JSON.stringify(saved));
+  document.getElementById('ap-title').value=''; document.getElementById('ap-desc').value='';
+  const s = document.getElementById('ap-success'); s.classList.add('show'); setTimeout(()=>s.classList.remove('show'),3000);
+  renderAdminProgramList();
+}
+function adminAddStartup() {
+  const name = document.getElementById('as-name').value;
+  const desc = document.getElementById('as-desc').value;
+  if (!name || !desc) { alert('Ad və təsvir məcburidir.'); return; }
+  const saved = JSON.parse(localStorage.getItem('custom_startups') || '[]');
+  saved.push({ id:Date.now(), name, stage:document.getElementById('as-stage').value, team:document.getElementById('as-team').value||'—', emoji:document.getElementById('as-emoji').value||'💡', category:document.getElementById('as-category').value||'Digər', desc });
+  localStorage.setItem('custom_startups', JSON.stringify(saved));
+  document.getElementById('as-name').value=''; document.getElementById('as-desc').value='';
+  const s = document.getElementById('as-success'); s.classList.add('show'); setTimeout(()=>s.classList.remove('show'),3000);
+  renderAdminStartupList();
+}
+
+// ═══════════════════════════════════
+//  INIT
+// ═══════════════════════════════════
+document.addEventListener('DOMContentLoaded', () => {
+  renderHomeStartups();
+  renderHomeEvents();
+  renderHomeNews();
+});
+</script>
+</body>
+</html>
