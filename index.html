@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ATU İnnovasiya Mərkəzi</title>
+<link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="icon" href="data:,">
+
 </head>
 <body>
 
@@ -29,6 +30,14 @@
     <span class="nav-link" data-page="news" onclick="showPage('news',this)">Xəbərlər</span>
     <span class="nav-link" data-page="partners" onclick="showPage('partners',this)">Tərəfdaşlar</span>
     <span class="nav-link" data-page="contact" onclick="showPage('contact',this)">Əlaqə</span>
+    <div class="nav-mobile-bottom">
+      <div class="nav-mobile-lang">
+        <button class="lang-btn active" id="mob-lang-az" onclick="setLang('az',this);syncLangBtns('az')">AZ</button>
+        <button class="lang-btn" id="mob-lang-en" onclick="setLang('en',this);syncLangBtns('en')">EN</button>
+        <button class="lang-btn" id="mob-lang-ru" onclick="setLang('ru',this);syncLangBtns('ru')">RU</button>
+      </div>
+      <button class="btn-nav-primary nav-mobile-apply" onclick="showPage('apply')">Müraciət et</button>
+    </div>
   </div>
   <div class="nav-right">
     <button class="lang-btn active" onclick="setLang('az',this)">AZ</button>
@@ -1134,6 +1143,7 @@ function showPage(name, navEl) {
   if (navEl) navEl.classList.add('active');
   else { const f = document.querySelector(`.nav-link[data-page="${name}"]`); if (f) f.classList.add('active'); }
   document.getElementById('navLinks').classList.remove('open');
+  const hb = document.querySelector('.hamburger'); if (hb) hb.classList.remove('open');
   const renders = {
     home: () => { renderHomeStartups(); renderHomeEvents(); renderHomeNews(); },
     startups: renderStartups,
@@ -1149,6 +1159,7 @@ function showPage(name, navEl) {
 
 function toggleNav() {
   document.getElementById('navLinks').classList.toggle('open');
+  document.querySelector('.hamburger').classList.toggle('open');
 }
 // ═══════════════════════════════════
 //  i18n TRANSLATION SYSTEM
@@ -1497,6 +1508,9 @@ function applyTranslations() {
   const navBtns = document.querySelectorAll('.btn-nav-primary');
   if (navBtns[0]) navBtns[0].textContent = t('navApply');
   if (navBtns[1]) navBtns[1].textContent = t('navAdmin');
+  // Mobile apply button
+  const mobileApply = document.querySelector('.nav-mobile-apply');
+  if (mobileApply) mobileApply.textContent = t('navApply');
 
   // Hero
   const heroH1 = document.querySelector('.hero-content h1');
@@ -1750,10 +1764,18 @@ function applyTranslations() {
   }
 }
 
-function setLang(lang, btn) {
+function syncLangBtns(lang) {
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    if (b.textContent.trim().toLowerCase() === lang.toLowerCase()) b.classList.add('active');
+  });
+  const mobileApply = document.querySelector('.nav-mobile-apply');
+  if (mobileApply) mobileApply.textContent = t('navApply');
+}
+
+function setLang(lang, btn) {
   currentLang = lang;
+  syncLangBtns(lang);
   applyTranslations();
 }
 
