@@ -895,50 +895,71 @@ footer {
 
 
 /* ─── RESPONSİV ─── */
-@media (max-width: 1024px) {
-  .grid-4 { grid-template-columns: repeat(2,1fr); }
-  .grid-3 { grid-template-columns: repeat(2,1fr); }
-  .about-split { grid-template-columns: 1fr; gap: 3rem; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-}
-/* Mobile-only nav bottom section */
+/* ─── MOBILE NAV BOTTOM (hamburger içi) ─── */
 .nav-mobile-bottom { display: none; }
 
-@media (max-width: 768px) {
+/* ─── TABLET + MOBILE: 1080px-dən kiçik ─── */
+@media (max-width: 1080px) {
+  /* Navbar linklər gizlənir */
   .nav-links { display: none; }
+  /* Hamburger görünür */
+  .hamburger { display: flex !important; }
+  /* Desktop lang + apply düymələri gizlənir */
+  .nav-links-desktop-only { display: none; }
+  .btn-nav-primary { display: none; }
+  /* Nav-right-da yalnız lang-btn-lər + hamburger qalsın */
+  .nav-right { gap: 8px; }
+
+  /* Açıq menyu */
   .nav-links.open {
-    display: flex; flex-direction: column;
+    display: flex !important; flex-direction: column;
     position: fixed; top: 68px; left: 0; right: 0;
     background: rgba(255,255,255,0.99); backdrop-filter: blur(20px);
     padding: 1rem 1.25rem 1.5rem; border-bottom: 1px solid #e2e8f0;
-    z-index: 999; gap: 0.2rem;
+    z-index: 999; gap: 0.25rem;
     overflow-y: auto; max-height: calc(100vh - 68px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
   }
-  .hamburger { display: flex; }
-  .btn-nav-primary { display: none; }
-  /* Show mobile lang + apply section inside open menu */
+  .nav-links.open .nav-link {
+    padding: 10px 14px; font-size: 0.9rem; border-radius: 8px;
+  }
+
+  /* Hamburger içindəki dil + müraciət bölməsi */
   .nav-links.open .nav-mobile-bottom {
     display: flex; flex-direction: column; gap: 0.75rem;
-    margin-top: 0.75rem; padding-top: 1rem;
+    margin-top: 0.5rem; padding-top: 1rem;
     border-top: 1px solid #e2e8f0;
   }
   .nav-mobile-lang {
     display: flex; gap: 0.5rem;
   }
   .nav-mobile-lang .lang-btn {
-    flex: 1; padding: 0.5rem; font-size: 0.82rem;
+    flex: 1; padding: 0.55rem; font-size: 0.82rem;
     border-radius: 8px; border: 1px solid #e2e8f0;
     background: #f8fafc; color: #475569; font-weight: 600;
-    cursor: pointer; transition: all 0.15s;
+    cursor: pointer; transition: all 0.15s; display: block;
   }
   .nav-mobile-lang .lang-btn.active {
-    background: #2563eb; color: #fff; border-color: #2563eb;
+    background: #0f172a; color: #fff; border-color: #0f172a;
   }
   .nav-mobile-apply {
     display: block !important; width: 100%; text-align: center;
-    padding: 0.7rem 1rem; border-radius: 8px;
+    padding: 0.75rem 1rem; border-radius: 8px;
     font-size: 0.9rem; font-weight: 600;
+    background: #2563eb; color: #fff; border: none; cursor: pointer;
   }
+
+  /* Grid düzəlişləri */
+  .grid-4 { grid-template-columns: repeat(2,1fr); }
+  .grid-3 { grid-template-columns: repeat(2,1fr); }
+  .about-split { grid-template-columns: 1fr; gap: 3rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ─── MOBILE: 768px-dən kiçik ─── */
+@media (max-width: 768px) {
+  /* Desktop navbar lang-btn-lər gizlənir (mobil menyuda var) */
+  .nav-right .lang-btn { display: none; }
   .grid-3, .grid-2, .grid-auto { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr 1fr; }
   .contact-split { grid-template-columns: 1fr; }
@@ -953,9 +974,12 @@ footer {
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
+
+/* ─── KİÇİK MOBILE: 480px ─── */
 @media (max-width: 480px) {
   .section { padding: 64px 1.25rem; }
   .grid-4 { grid-template-columns: 1fr; }
   .hero h1 { font-size: 2.2rem; }
   .hero-stat-num { font-size: 1.8rem; }
+  nav { padding: 0 1rem; }
 }
