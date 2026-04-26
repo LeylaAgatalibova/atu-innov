@@ -37,6 +37,7 @@
         <button class="lang-btn" id="mob-lang-ru" onclick="setLang('ru',this);syncLangBtns('ru')">RU</button>
       </div>
       <button class="btn-nav-primary nav-mobile-apply" onclick="showPage('apply')">Müraciət et</button>
+      <button class="btn-nav-primary nav-mobile-admin" onclick="showPage('admin')" style="background:rgba(15,23,42,0.08);color:#0f172a">Admin</button>
     </div>
   </div>
   <div class="nav-right">
@@ -679,7 +680,40 @@
      ADMIN PAGE
 ═══════════════════════════════════ -->
 <div id="page-admin" class="page">
+
+  <!-- Mobil Admin Drawer Overlay -->
+  <div class="admin-drawer-overlay" id="adminDrawerOverlay" onclick="closeAdminDrawer()"></div>
+
+  <!-- Mobil Admin Drawer -->
+  <div class="admin-drawer" id="adminDrawer">
+    <div class="admin-drawer-header">
+      <div class="admin-logo" style="padding-bottom:0;border-bottom:none;margin-bottom:0">ATU Admin<span>İnnovasiya Mərkəzi</span></div>
+      <button class="admin-drawer-close" onclick="closeAdminDrawer()">✕</button>
+    </div>
+    <div class="admin-drawer-nav">
+      <div class="admin-nav-item active" onclick="showAdminPanel('dashboard',this);closeAdminDrawer()">📊 Panel</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('add-event',this);closeAdminDrawer()">📅 Yeni Tədbir</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('add-program',this);closeAdminDrawer()">📚 Yeni Proqram</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('add-startup',this);closeAdminDrawer()">💡 Yeni Startap</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('volunteers',this);closeAdminDrawer()">🙋 Könüllü Müraciətlər</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('startup-apps',this);closeAdminDrawer()">🚀 Startap Müraciətlər</div>
+      <div class="admin-nav-item" onclick="showAdminPanel('volunteer-hub',this);closeAdminDrawer()">➕ Könüllü Əlavə Et</div>
+      <div style="margin-top:2rem">
+        <div class="admin-nav-item" onclick="showPage('home')" style="color:#f87171">← Sayta qayıt</div>
+      </div>
+    </div>
+  </div>
+
   <div class="admin-layout">
+    <!-- Mobil topbar -->
+    <div class="admin-mobile-topbar">
+      <button class="admin-menu-btn" onclick="openAdminDrawer()">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="admin-mobile-title">ATU Admin</div>
+      <button class="admin-mobile-back" onclick="showPage('home')">✕</button>
+    </div>
+
     <div class="admin-sidebar" style="padding-top:80px">
       <div class="admin-logo">ATU Admin<span>İnnovasiya Mərkəzi</span></div>
       <div class="admin-nav-item active" onclick="showAdminPanel('dashboard',this)">📊 Panel</div>
@@ -790,12 +824,22 @@
       <div class="admin-panel" id="admin-volunteer-hub">
         <div class="admin-title">Könüllü Manual Əlavə Et</div>
         <div class="admin-sub">Aşağıdakı sistem vasitəsilə könüllüləri manual olaraq əlavə edin və idarə edin</div>
-        <div style="margin-top:1.5rem;border-radius:12px;overflow:hidden;border:1px solid #e2e8f0;box-shadow:0 2px 12px rgba(0,0,0,0.06)">
+        <!-- Mobil üçün xarici link düyməsi -->
+        <div class="volunteer-hub-mobile-banner">
+          <div class="vhm-icon">📱</div>
+          <div class="vhm-text">
+            <strong>Mobil cihazda daha yaxşı işləyir</strong>
+            <span>Könüllü idarəetmə sistemini tam ekranda açın</span>
+          </div>
+          <a href="https://volunteer-hub-gamma.vercel.app/" target="_blank" class="btn btn-secondary btn-sm">Tam aç →</a>
+        </div>
+        <div class="volunteer-hub-frame-wrap">
           <iframe 
             src="https://volunteer-hub-gamma.vercel.app/" 
-            style="width:100%;height:82vh;border:none;display:block;"
+            class="volunteer-hub-iframe"
             title="Volunteer Hub - Manual Management"
             allow="clipboard-write"
+            scrolling="yes"
           ></iframe>
         </div>
       </div>
@@ -1510,9 +1554,11 @@ function applyTranslations() {
   const navBtns = document.querySelectorAll('.btn-nav-primary');
   if (navBtns[0]) navBtns[0].textContent = t('navApply');
   if (navBtns[1]) navBtns[1].textContent = t('navAdmin');
-  // Mobile apply button
+  // Mobile apply + admin buttons
   const mobileApply = document.querySelector('.nav-mobile-apply');
   if (mobileApply) mobileApply.textContent = t('navApply');
+  const mobileAdmin = document.querySelector('.nav-mobile-admin');
+  if (mobileAdmin) mobileAdmin.textContent = t('navAdmin');
 
   // Hero
   const heroH1 = document.querySelector('.hero-content h1');
@@ -1764,6 +1810,17 @@ function applyTranslations() {
     };
     if (renders[pageId]) renders[pageId]();
   }
+}
+
+function openAdminDrawer() {
+  document.getElementById('adminDrawer').classList.add('open');
+  document.getElementById('adminDrawerOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeAdminDrawer() {
+  document.getElementById('adminDrawer').classList.remove('open');
+  document.getElementById('adminDrawerOverlay').classList.remove('open');
+  document.body.style.overflow = '';
 }
 
 function syncLangBtns(lang) {

@@ -894,6 +894,116 @@ footer {
 .page-body { padding-top: 68px; } /* 📏 navbar hündürlüyünə uyğun olmalıdır */
 
 
+
+
+/* ─── VOLUNTEER HUB IFRAME ─── */
+/* Volunteer Hub mobil banner */
+.volunteer-hub-mobile-banner {
+  display: none;
+}
+@media (max-width: 1080px) {
+  .volunteer-hub-mobile-banner {
+    display: flex; align-items: center; gap: 1rem;
+    background: #f0f9ff; border: 1px solid #bae6fd;
+    border-radius: 10px; padding: 1rem 1.25rem;
+    margin-bottom: 1rem; flex-wrap: wrap;
+  }
+  .vhm-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .vhm-text { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+  .vhm-text strong { font-size: 0.85rem; color: #0f172a; font-weight: 700; }
+  .vhm-text span { font-size: 0.78rem; color: #475569; font-weight: 300; }
+}
+
+.volunteer-hub-frame-wrap {
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  -webkit-overflow-scrolling: touch;
+}
+.volunteer-hub-iframe {
+  width: 100%;
+  height: 82vh;
+  border: none;
+  display: block;
+}
+@media (max-width: 768px) {
+  .volunteer-hub-frame-wrap {
+    border-radius: 8px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .volunteer-hub-iframe {
+    height: 75vh;
+    min-height: 500px;
+    width: 100%;
+    min-width: 320px;
+  }
+}
+
+/* ─── ADMİN MOBİL DRAWER ─── */
+.admin-mobile-topbar {
+  display: none;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+  height: 56px; background: #0f172a;
+  align-items: center; justify-content: space-between;
+  padding: 0 1rem; gap: 1rem;
+}
+.admin-menu-btn {
+  display: flex; flex-direction: column; gap: 4px;
+  background: none; border: none; cursor: pointer; padding: 6px;
+}
+.admin-menu-btn span {
+  width: 20px; height: 1.5px; background: #ffffff; border-radius: 2px; display: block;
+}
+.admin-mobile-title {
+  font-family: 'Nunito', Georgia, serif;
+  font-weight: 700; font-size: 0.9rem; color: #ffffff; flex: 1; text-align: center;
+}
+.admin-mobile-back {
+  background: rgba(255,255,255,0.1); border: none; color: rgba(255,255,255,0.7);
+  width: 32px; height: 32px; border-radius: 6px;
+  font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.admin-mobile-back:hover { background: rgba(248,113,113,0.2); color: #f87171; }
+
+/* Overlay */
+.admin-drawer-overlay {
+  display: none; position: fixed; top: 68px; left: 0; right: 0; bottom: 0; z-index: 1100;
+  background: rgba(0,0,0,0.5); backdrop-filter: blur(2px);
+  opacity: 0; transition: opacity 0.25s;
+}
+.admin-drawer-overlay.open { display: block; opacity: 1; }
+
+/* Drawer paneli */
+.admin-drawer {
+  position: fixed; top: 68px; left: 0; bottom: 0; z-index: 1200;
+  width: 270px; background: #0f172a;
+  transform: translateX(-100%);
+  transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+  display: flex; flex-direction: column;
+  box-shadow: 4px 0 24px rgba(0,0,0,0.3);
+}
+.admin-drawer.open { transform: translateX(0); }
+
+.admin-drawer-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.25rem 1rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.admin-drawer-close {
+  background: rgba(255,255,255,0.08); border: none;
+  color: rgba(255,255,255,0.6); width: 30px; height: 30px;
+  border-radius: 6px; font-size: 0.85rem; cursor: pointer;
+  transition: all 0.2s; display: flex; align-items: center; justify-content: center;
+}
+.admin-drawer-close:hover { background: rgba(248,113,113,0.2); color: #f87171; }
+
+.admin-drawer-nav {
+  flex: 1; overflow-y: auto; padding: 1rem;
+}
 /* ─── RESPONSİV ─── */
 /* ─── MOBILE NAV BOTTOM (hamburger içi) ─── */
 .nav-mobile-bottom { display: none; }
@@ -942,12 +1052,13 @@ footer {
   .nav-mobile-lang .lang-btn.active {
     background: #0f172a; color: #fff; border-color: #0f172a;
   }
-  .nav-mobile-apply {
+  .nav-mobile-apply, .nav-mobile-admin {
     display: block !important; width: 100%; text-align: center;
     padding: 0.75rem 1rem; border-radius: 8px;
-    font-size: 0.9rem; font-weight: 600;
-    background: #2563eb; color: #fff; border: none; cursor: pointer;
+    font-size: 0.9rem; font-weight: 600; border: none; cursor: pointer;
   }
+  .nav-mobile-apply { background: #2563eb; color: #fff; }
+  .nav-mobile-admin { background: rgba(15,23,42,0.08); color: #0f172a; }
 
   /* Grid düzəlişləri */
   .grid-4 { grid-template-columns: repeat(2,1fr); }
@@ -960,6 +1071,10 @@ footer {
 @media (max-width: 768px) {
   /* Desktop navbar lang-btn-lər gizlənir (mobil menyuda var) */
   .nav-right .lang-btn { display: none; }
+  /* Admin mobil topbar */
+  .admin-mobile-topbar { display: flex; top: 68px; } /* Ana navbar altında */
+  .admin-content { padding-top: 124px !important; } /* 68px navbar + 56px admin topbar */
+  #page-admin .admin-layout { padding-top: 0; }
   .grid-3, .grid-2, .grid-auto { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr 1fr; }
   .contact-split { grid-template-columns: 1fr; }
